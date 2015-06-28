@@ -76,6 +76,33 @@
   //     object.on('expand', function(){ alert('expanded'); });
   //     object.trigger('expand');
   //
+  //var eventSplitter = /\s+/;
+  //
+  //// Implement fancy features of the Events API such as multiple event
+  //// names `"change blur"` and jQuery-style event maps `{change: action}`
+  //// in terms of the existing API.
+  var eventsApi = function(obj, action, name, rest) {
+    if (!name) return true;
+
+    // Handle event maps.
+    if (typeof name === 'object') {//判断是否是Object类型
+      for (var key in name) {
+        obj[action].apply(obj, [key, name[key]].concat(rest));
+      }
+      return false;
+    }
+
+    // Handle space separated event names.
+    if (eventSplitter.test(name)) {//判断格式是否为 例如： change even 这样的格式
+      var names = name.split(eventSplitter);
+      for (var i = 0, length = names.length; i < length; i++) {
+        obj[action].apply(obj, [names[i]].concat(rest));
+      }
+      return false;
+    }
+
+    return true;
+  };
   var Events = Backbone.Events = {
 
     // Bind an event to a `callback` function. Passing `"all"` will bind
@@ -228,7 +255,7 @@
     if (!name) return true;
 
     // Handle event maps.
-    if (typeof name === 'object') {
+    if (typeof name === 'object') {//判断是否是Object类型
       for (var key in name) {
         obj[action].apply(obj, [key, name[key]].concat(rest));
       }
@@ -236,7 +263,7 @@
     }
 
     // Handle space separated event names.
-    if (eventSplitter.test(name)) {
+    if (eventSplitter.test(name)) {//判断格式是否为 例如： change even 这样的格式
       var names = name.split(eventSplitter);
       for (var i = 0, length = names.length; i < length; i++) {
         obj[action].apply(obj, [names[i]].concat(rest));
