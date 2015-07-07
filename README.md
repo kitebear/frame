@@ -23,11 +23,11 @@ thwenMove(option)
 >>-当前时间*变化量/持续时间+初始值<br> 
 
 事例<br>
->     window.thwenMove({<br> 
->>     ele: document.querySelector(".v1"),<br> 
->>     obj: {"left": 450, "opacity": 1},<br> 
->>     duration: 300 * 1.5,<br> 
->>     effect: [ 'Quint', 'easeInOut' ]<br> 
+>     window.thwenMove({
+>         ele: document.querySelector(".v1"),
+>         obj: {"left": 450, "opacity": 1},
+>         duration: 300 * 1.5,<br> 
+>         effect: [ 'Quint', 'easeInOut' ]
 >     });<br> 
   
 它会向右easeInOut的速度移动
