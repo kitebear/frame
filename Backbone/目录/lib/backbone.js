@@ -76,33 +76,6 @@
   //     object.on('expand', function(){ alert('expanded'); });
   //     object.trigger('expand');
   //
-  //var eventSplitter = /\s+/;
-  //
-  //// Implement fancy features of the Events API such as multiple event
-  //// names `"change blur"` and jQuery-style event maps `{change: action}`
-  //// in terms of the existing API.
-  var eventsApi = function(obj, action, name, rest) {
-    if (!name) return true;
-
-    // Handle event maps.
-    if (typeof name === 'object') {//判断是否是Object类型
-      for (var key in name) {
-        obj[action].apply(obj, [key, name[key]].concat(rest));
-      }
-      return false;
-    }
-
-    // Handle space separated event names.
-    if (eventSplitter.test(name)) {//判断格式是否为 例如： change even 这样的格式
-      var names = name.split(eventSplitter);
-      for (var i = 0, length = names.length; i < length; i++) {
-        obj[action].apply(obj, [names[i]].concat(rest));
-      }
-      return false;
-    }
-
-    return true;
-  };
   var Events = Backbone.Events = {
 
     // Bind an event to a `callback` function. Passing `"all"` will bind
@@ -255,7 +228,7 @@
     if (!name) return true;
 
     // Handle event maps.
-    if (typeof name === 'object') {//判断是否是Object类型
+    if (typeof name === 'object') {
       for (var key in name) {
         obj[action].apply(obj, [key, name[key]].concat(rest));
       }
@@ -263,7 +236,7 @@
     }
 
     // Handle space separated event names.
-    if (eventSplitter.test(name)) {//判断格式是否为 例如： change even 这样的格式
+    if (eventSplitter.test(name)) {
       var names = name.split(eventSplitter);
       for (var i = 0, length = names.length; i < length; i++) {
         obj[action].apply(obj, [names[i]].concat(rest));
@@ -1724,7 +1697,7 @@
     // The constructor function for the new subclass is either defined by you
     // (the "constructor" property in your `extend` definition), or defaulted
     // by us to simply call the parent's constructor.
-    if (protoProps && _.has(protoProps, 'constructor')) {//确定protoPros 是否拥有constructor
+    if (protoProps && _.has(protoProps, 'constructor')) {
       child = protoProps.constructor;
     } else {
       child = function(){ return parent.apply(this, arguments); };
