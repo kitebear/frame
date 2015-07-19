@@ -12,7 +12,7 @@ define([ 'backbone' ], function (Backbone) {
                 return "can't end before it starts";
             }
         },
-        urlRoot:'/books'
+        urlRoot:'/books' 
     });
 
     //不加()也是创建一个实体对象
@@ -70,7 +70,5 @@ define([ 'backbone' ], function (Backbone) {
 
         //在 "change" 事件发生的过程中，本方法可被用于获取已改变属性的旧值。
         //previousmodel.previous(attribute)
-
-
     });
 });
