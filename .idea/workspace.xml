@@ -2,8 +2,221 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2018e462-f825-4660-b5ad-87d4f556121e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backbone/目录/main.js" afterPath="$PROJECT_DIR$/Backbone/目录/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/LICENSE.APACHE2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/LICENSE.MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/Makefile.dryice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/polyfill/Object.es6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/dist/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/amdefine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/filters/array-filters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/observer/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/assert-shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/test/async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/attr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/test/auto-destroy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/base62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/batcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/test/buffering.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/model/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/child.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/cloak.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/test/compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/compiler/compile-props.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/compiler/compile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/instance/compile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/element-directives/content.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/observer/dep.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/parsers/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/src/docblock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/dom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/test/end.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/.bin/envify" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/bin/envify" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/views/error.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-arrow-function-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-arrow-function-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-call-spread-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-call-spread-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-class-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-class-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-destructuring-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-destructuring-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-es7-object-integration-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-object-concise-method-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-object-concise-method-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-object-short-notation-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-object-short-notation-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-rest-param-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-rest-param-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es6-template-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es6-template-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es7-rest-property-helpers-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es7-rest-property-helpers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/es7-spread-property-visitors-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/es7-spread-property-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/bin/esparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/.bin/esparse" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/esprima.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/bin/esvalidate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/.bin/esvalidate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/instance/events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/parsers/expression.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/gen/generate-type-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/if.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/views/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/views/index.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/compiler/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/model/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/element-directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/filters/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/observer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/transition/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/routes/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/instance/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/intercept.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/jestEnvironment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/jestPreprocessor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/src/__tests__/jstransform-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/src/__tests__/jstransform-utils-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/src/jstransform.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/views/layout.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/api/lifecycle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/mini-require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/instance/misc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/observer/object.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/on.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/util/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/element-directives/partial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/parsers/path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/prefix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/prefix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/prop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/transition/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/model/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/through/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/ref.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/test/reflect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/repeat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/reserved-words-helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/reserved-words-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/reserved-words-visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/run-tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/test/run.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/test/runner.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/instance/scope.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/model/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/show.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/public/stylesheets/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/suffix-browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/suffix-source-map.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/suffix-utils.jsm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/parsers/template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-array-set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-base64-vlq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-base64.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-binary-search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-dog-fooding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/test-prefix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-source-map-consumer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-source-map-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/test-source-node.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/build/test-suffix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/base62/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/model/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/parsers/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/compiler/transclude.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/directives/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/transition/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-alias-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-class-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-function-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-interface-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-object-method-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-pattern-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/gen/type-syntax-test.rec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/type-syntax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/visitors/__tests__/type-variable-declaration-syntax-test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/lib/source-map/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/node_modules/source-map/test/source-map/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/node_modules/jstransform/src/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/node_modules/envify/visitors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/dist/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/dist/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/public/javascripts/vuetest1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/node_modules/vue/src/watcher.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vuejs/bin/www" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dsad.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dsad.css.map" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dsad.scss" afterPath="$PROJECT_DIR$/vuejs/views/ease_demo/d1.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js" afterPath="$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="frame.iws" />
@@ -28,78 +241,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/main.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vuejs/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.67105263" vertical-offset="504" max-vertical-offset="975">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="on_off_trigger_once.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/on_off_trigger_once.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1020">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="d1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/d1.html">
+      <file leaf-file-name="error.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/views/error.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validate.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js">
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29577464" vertical-offset="0" max-vertical-offset="1185">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frame.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="2355">
-              <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="600">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="escape.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/escape.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1020">
-              <caret line="42" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dsad.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsad.scss">
+      <file leaf-file-name="d1.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/views/ease_demo/d1.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -108,21 +291,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/demo.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listenTo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/listenTo.js">
+      <file leaf-file-name="vuetest1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/public/javascripts/vuetest1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="780">
-              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vuejs/views/layout.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -139,7 +332,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="846" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -193,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
+              <option name="myItemId" value="vuejs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -207,33 +400,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
+              <option name="myItemId" value="vuejs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="目录" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="目录" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone.Model(模型)" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -247,15 +418,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone" />
+              <option name="myItemId" value="vuejs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="目录" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Backbone.Events(事件)" />
+              <option name="myItemId" value="ease_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vuejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,6 +501,11 @@
     <property name="options.lastSelected" value="watcher.settings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="editorconfig.notification" value="Applied .editorconfig settings" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vuejs/bin/www" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -285,11 +519,15 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Unnamed">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -297,10 +535,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -323,7 +557,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="bin/www" working-dir="$PROJECT_DIR$/vuejs">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.Unnamed" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -339,27 +580,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="846" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="839" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33009708" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32871014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -388,167 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/extend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="795">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1215">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="2355">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/escape.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1020">
-          <caret line="42" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/listenTo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="780">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/on_off_trigger_once.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1020">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/d1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/extend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="795">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/other.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="885">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/escape.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1020">
-          <caret line="42" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/listenTo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="780">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/lib/backbone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2341" max-vertical-offset="26265">
-          <caret line="174" column="64" selection-start-line="174" selection-start-column="49" selection-end-line="174" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2355">
-          <caret line="119" column="15" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1674" max-vertical-offset="2355">
@@ -679,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/other.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="885">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/extend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="795">
@@ -697,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="1020">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,46 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1020">
           <caret line="42" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/listenTo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="780">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="564" max-vertical-offset="2355">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backbone/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -767,8 +799,220 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Model(模型)/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29577464" vertical-offset="0" max-vertical-offset="1185">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1185">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/other.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/src/selector-sizzle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46153846" vertical-offset="0" max-vertical-offset="455">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/test/unit/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.841629" vertical-offset="4545" max-vertical-offset="31350">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2200956" vertical-offset="0" max-vertical-offset="4515">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6703296" vertical-offset="2320" max-vertical-offset="2775">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backbone/目录/Backbone.Events(事件)/listenTo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44117647" vertical-offset="0" max-vertical-offset="780">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/build/release/dist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4395604" vertical-offset="655" max-vertical-offset="1755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/build/release/ensure-sizzle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.84615386" vertical-offset="385" max-vertical-offset="840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/build/tasks/lib/spawn_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backbone/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06593407" vertical-offset="0" max-vertical-offset="455">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/AUTHORS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4005">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/node_modules/vue/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36263737" vertical-offset="0" max-vertical-offset="455">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/node_modules/vue/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.062645" vertical-offset="949" max-vertical-offset="1380">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6597222" vertical-offset="0" max-vertical-offset="435">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1575179" vertical-offset="1149" max-vertical-offset="2355">
+          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/node_modules/vue/dist/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-49.93421" vertical-offset="22770" max-vertical-offset="150945">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery/node_modules/promises-aplus-tests/node_modules/mocha/lib/reporters/tap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24342105" vertical-offset="729" max-vertical-offset="1185">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/views/ease_demo/d1.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/public/javascripts/vuetest1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuejs/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67105263" vertical-offset="504" max-vertical-offset="975">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding />
         </state>
       </provider>

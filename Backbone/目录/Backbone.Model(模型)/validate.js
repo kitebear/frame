@@ -12,7 +12,7 @@ define([ 'backbone' ], function (Backbone) {
                 return "can't end before it starts";
             }
         },
-        urlRoot:'/books' 
+        urlRoot:'/books'
     });
 
     //不加()也是创建一个实体对象

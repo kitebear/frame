@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  p Welcome to #{title}
+  #demo
+    p {{message}}
+    input(v-model="message")
+block autoScript
+  script(src="/vue/dist/vue.js")
+  script(src="/javascripts/vuetest1.js")
