@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-
-gulp.task('default', function() {
-    console.log("test");
-});
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+var minifyCss = require('gulp-minify-css');
+var concat = require('gulp-concat');
