@@ -1,7 +1,7 @@
 /**
  * 组件安装
  * @type {Gulp|exports}
- * npm install gulp-htmlmin gulp-util gulp-jshint gulp-clean gulp-rename gulp-ruby-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
+ * npm install gulp-util gulp-jshint gulp-clean gulp-rename gulp-ruby-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
  */
 // 引入 gulp及组件
 var gulp = require('gulp'),                     //基础库
