@@ -1,7 +1,7 @@
 /**
  * 组件安装
  * @type {Gulp|exports}
- * npm install gulp-util gulp-jshint gulp-clean gulp-rename gulp-ruby-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
+ * npm install gulp-util gulp-notify gulp-jshint gulp-clean gulp-rename gulp-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
  */
 // 引入 gulp及组件
 var gulp = require('gulp'),                     //基础库
@@ -14,6 +14,9 @@ var gulp = require('gulp'),                     //基础库
     sass = require('gulp-ruby-sass'),           //sass
     concat = require('gulp-concat'),            //合并文件
     clean = require('gulp-clean'),              //清空文件夹
+    webpack = require("webpack"),               //webpack
+    gutil = require("gulp-util"),
+    notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),    //livereload
     tinylr = require('tiny-lr'),                //livereload
     server = tinylr(),
@@ -21,12 +24,13 @@ var gulp = require('gulp'),                     //基础库
 
 var base = "bower_components/",
     jsArray = [
-        base + "vue/dist/vue.min.js"
+        base + "vue/dist/vue.js"
     ];
 
+
+
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
-gulp.task('default', ['clean'], function () {
-    gulp.run('watch');
+gulp.task('default',['clean'], function () {
     gulp.start('sass', 'images', 'js');
 });
 
@@ -59,7 +63,7 @@ gulp.task('sass', function () {
     var cssSrc = 'public/stylesheets/*.scss',
         cssDst = 'dist/stylesheets';
 
-    return sass(cssSrc, {verbose: true})
+    return sass(cssSrc)
         .on('error', sass.logError)
         .pipe(gulp.dest(cssDst))
         .pipe(minifycss())
@@ -75,12 +79,32 @@ gulp.task('js', function () {
 
     gulp.src(jsArray)
         .pipe(jshint('.jshintrc'))
-        //.pipe(jshint.reporter('default'))
+        .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(jsDst))
+        //.pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(livereload(server))
-        .pipe(gulp.dest(jsDst));
+        .pipe(gulp.dest(jsDst))
+        .pipe(notify({ message: 'Scripts task complete' }));
+});
+
+gulp.task('clearJs', function () {
+    gulp.src('dist/javascripts/main.js', {read: false})
+        .pipe(clean());
+});
+
+gulp.task("webpack", function (callback) {
+    // run webpack
+    webpack({
+        // configuration
+    }, function (err, stats) {
+        if (err) throw new gutil.PluginError("webpack", err);
+        gutil.log("[webpack]", stats.toString({
+            // output options
+        }));
+        callback();
+    });
 });
 
 // 监听任务 运行语句 gulp watch
@@ -91,33 +115,42 @@ gulp.task('watch', function () {
             return console.log(err);
         }
 
-        // 监听html
-        gulp.watch('./src/*.html', function (event) {
-            gulp.run('html');
-        });
+        //// 监听html
+        //gulp.watch('./src/*.html', function (event) {
+        //    gulp.run('html');
+        //});
 
         // 监听css
-        gulp.watch('public/stylesheets/**', function () {
-            gulp.run('sass');
-        });
-
-        // 监听images
-        gulp.watch('./src/images/**/*', function () {
-            gulp.run('images');
-        });
-
-        // 监听js
-        gulp.watch('./src/js/*.js', function () {
-            gulp.run('js');
-        });
-
-        gulp.watch(['views/*.jade', "dist/images", "dist/stylesheets/*.css", "dist/javascripts/*.js"], function (e) {
-            server.changed({
-                body: {
-                    files: [e.path]
-                }
+        gulp.watch('public/stylesheets/*.scss', function (e) {
+            gulp.run('sass',function(){
+                server.changed({
+                    body: {
+                        files: [e.path]
+                    }
+                });
             });
         });
 
+        // 监听images
+        gulp.watch('public/images/**', function (e) {
+            gulp.run('images',function(){
+                server.changed({
+                    body: {
+                        files: [e.path]
+                    }
+                });
+            });
+        });
+
+        // 监听js
+        gulp.watch('public/javascripts/**', function (e) {
+            gulp.run('js',function(){
+                server.changed({
+                    body: {
+                        files: [e.path]
+                    }
+                });
+            });
+        });
     });
 });
