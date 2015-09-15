@@ -37,7 +37,8 @@ gulp.task('default',['clean'], function () {
 // 清空图片、样式、js
 gulp.task('clean', function () {
     gulp.src(['dist/stylesheets', 'dist/javascripts', 'dist/images'], {read: false})
-        .pipe(clean());
+        .pipe(clean())
+        .pipe(notify({ message: '文件清除完毕' }));
 });
 
 // 图片处理
@@ -55,7 +56,8 @@ gulp.task('images', function () {
             use: [pngquant()]
         }))
         .pipe(livereload(server))
-        .pipe(gulp.dest(imgDst));
+        .pipe(gulp.dest(imgDst))
+        .pipe(notify({ message: '图片处理完毕' }));
 });
 
 // 样式处理
@@ -69,6 +71,7 @@ gulp.task('sass', function () {
         .pipe(minifycss())
         .pipe(livereload(server))
         .pipe(gulp.dest(cssDst))
+        .pipe(notify({ message: 'SCSS加载完毕' }));
 });
 
 // js处理
@@ -86,18 +89,13 @@ gulp.task('js', function () {
         .pipe(uglify())
         .pipe(livereload(server))
         .pipe(gulp.dest(jsDst))
-        .pipe(notify({ message: 'Scripts task complete' }));
-});
-
-gulp.task('clearJs', function () {
-    gulp.src('dist/javascripts/main.js', {read: false})
-        .pipe(clean());
+        .pipe(notify({ message: 'JS加载完毕' }));
 });
 
 gulp.task("webpack", function (callback) {
     // run webpack
     webpack({
-        // configuration
+
     }, function (err, stats) {
         if (err) throw new gutil.PluginError("webpack", err);
         gutil.log("[webpack]", stats.toString({
