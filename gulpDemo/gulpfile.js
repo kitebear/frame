@@ -1,7 +1,7 @@
 /**
  * 组件安装
  * @type {Gulp|exports}
- * npm install gulp-util gulp-notify gulp-jshint gulp-clean gulp-rename gulp-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
+ * npm install css-loader style-loader gulp-util gulp-notify gulp-jshint gulp-clean gulp-rename gulp-sass gulp-imagemin imagemin-pngquant gulp-minify-css gulp-uglify gulp-concat gulp-livereload tiny-lr --save-dev
  */
 // 引入 gulp及组件
 var gulp = require('gulp'),                     //基础库
@@ -22,31 +22,55 @@ var gulp = require('gulp'),                     //基础库
     server = tinylr(),
     port = 35729;
 
+// config file
 var base = "bower_components/",
     jsArray = [
-        base + "vue/dist/vue.js"
+        //base + "vue/dist/vue.js"
     ];
+var src = "./public/";
+var dist = "./dist/";
+var config = {
+    images: {
+        src: src + "images/*",
+        dist: dist + "images"
+    },
+    sass: {
+        src: src + "stylesheets/*.scss",
+        dist: dist + "stylesheets"
+    },
+    js: {
+        src: src + "javascripts/*.js",
+        dist: dist + "javascripts"
+    }
+};
+var webpackConfig = require("./webpack.config")(config);
 
-
+// webpack打包工具
+gulp.task("webpack", function (callback) {
+    webpack(webpackConfig, function (err, stats) {
+        if (err) throw new gutil.PluginError("webpack", err);
+        gutil.log("[webpack]", stats.toString({
+            // output options
+        }));
+        callback();
+    });
+});
 
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
-gulp.task('default',['clean'], function () {
+gulp.task('default', ['clean'], function () {
     gulp.start('sass', 'images', 'js');
 });
 
 // 清空图片、样式、js
 gulp.task('clean', function () {
-    gulp.src(['dist/stylesheets', 'dist/javascripts', 'dist/images'], {read: false})
+    gulp.src([config.sass.dist, config.js.dist, config.images.dist], {read: false})
         .pipe(clean())
-        .pipe(notify({ message: '文件清除完毕' }));
+        .pipe(notify({message: '文件清除完毕'}));
 });
 
 // 图片处理
 gulp.task('images', function () {
-    var imgSrc = "public/images/*"
-        , imgDst = "dist/images";
-
-    return gulp.src(imgSrc)
+    return gulp.src(config.images.src)
         .pipe(imagemin())
         .pipe(imagemin({
             progressive: true,
@@ -56,58 +80,39 @@ gulp.task('images', function () {
             use: [pngquant()]
         }))
         .pipe(livereload(server))
-        .pipe(gulp.dest(imgDst))
-        .pipe(notify({ message: '图片处理完毕' }));
+        .pipe(gulp.dest(config.images.dist))
+        .pipe(notify({message: '图片处理完毕'}));
 });
 
 // 样式处理
 gulp.task('sass', function () {
-    var cssSrc = 'public/stylesheets/*.scss',
-        cssDst = 'dist/stylesheets';
-
-    return sass(cssSrc)
+    return sass(config.sass.src)
         .on('error', sass.logError)
-        .pipe(gulp.dest(cssDst))
+        .pipe(gulp.dest(config.sass.dist))
         .pipe(minifycss())
         .pipe(livereload(server))
-        .pipe(gulp.dest(cssDst))
-        .pipe(notify({ message: 'SCSS加载完毕' }));
+        .pipe(gulp.dest(config.sass.dist))
+        .pipe(notify({message: 'SCSS加载完毕'}));
 });
 
 // js处理
 gulp.task('js', function () {
-    var jsSrc = 'public/javascripts/*.js',
-        jsDst = 'dist/javascripts';
-    jsArray.push(jsSrc);
+    jsArray.push(config.js.src);
 
     gulp.src(jsArray)
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('default'))
         .pipe(concat('main.js'))
-        .pipe(gulp.dest(jsDst))
+        .pipe(gulp.dest(config.js.dist))
         //.pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
         .pipe(livereload(server))
-        .pipe(gulp.dest(jsDst))
-        .pipe(notify({ message: 'JS加载完毕' }));
-});
-
-gulp.task("webpack", function (callback) {
-    // run webpack
-    webpack({
-
-    }, function (err, stats) {
-        if (err) throw new gutil.PluginError("webpack", err);
-        gutil.log("[webpack]", stats.toString({
-            // output options
-        }));
-        callback();
-    });
+        .pipe(gulp.dest(config.js.dist))
+        .pipe(notify({message: 'JS加载完毕'}));
 });
 
 // 监听任务 运行语句 gulp watch
 gulp.task('watch', function () {
-
     server.listen(port, function (err) {
         if (err) {
             return console.log(err);
@@ -119,8 +124,8 @@ gulp.task('watch', function () {
         //});
 
         // 监听css
-        gulp.watch('public/stylesheets/*.scss', function (e) {
-            gulp.run('sass',function(){
+        gulp.watch(config.sass.src, function (e) {
+            gulp.run('sass', function () {
                 server.changed({
                     body: {
                         files: [e.path]
@@ -130,8 +135,8 @@ gulp.task('watch', function () {
         });
 
         // 监听images
-        gulp.watch('public/images/**', function (e) {
-            gulp.run('images',function(){
+        gulp.watch(config.images.src, function (e) {
+            gulp.run('images', function () {
                 server.changed({
                     body: {
                         files: [e.path]
@@ -141,8 +146,8 @@ gulp.task('watch', function () {
         });
 
         // 监听js
-        gulp.watch('public/javascripts/**', function (e) {
-            gulp.run('js',function(){
+        gulp.watch(config.js.src, function (e) {
+            gulp.run('js', function () {
                 server.changed({
                     body: {
                         files: [e.path]
