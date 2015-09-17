@@ -2,7 +2,7 @@ module.exports = function(config){
     return {
         entry: './dist/javascripts/main.js',
         output: {
-            path: __dirname,
+            path: './dist',
             filename: 'bundle.js'
         },
         module: {

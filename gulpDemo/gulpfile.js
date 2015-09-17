@@ -131,6 +131,7 @@ gulp.task('watch', function () {
                         files: [e.path]
                     }
                 });
+                gulp.run('webpack');
             });
         });
 
@@ -153,6 +154,7 @@ gulp.task('watch', function () {
                         files: [e.path]
                     }
                 });
+                gulp.run('webpack');
             });
         });
     });
