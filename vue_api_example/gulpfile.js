@@ -37,7 +37,7 @@ var config = {
         logLevel: "debug",
         logPrefix: "xdh",
         open: true,
-        browser: ["google chrome", "firefox"],
+        //browser: ["google chrome", "firefox"],
         files: ["./index.html"] //监控变化
     },
     vue:{

@@ -31,6 +31,8 @@
     "jquery": "^2.1.4",
     "style-loader": "^0.12.4",
     "vue": "^0.12.16",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^3.0.4",
     "vue-resource": "^0.1.16",
     "vue-router": "^0.6.2",
     "webpack": "^1.12.2"

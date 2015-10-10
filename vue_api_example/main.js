@@ -20,7 +20,7 @@ router = new VueRouter();
 
 router.map({
     '/': {
-        //component: require('./app.vue')
+        component: require('./vue/app.vue')
         //subRoutes: {
         //    '/media': {
         //        component: require('./views/media-view.vue')
