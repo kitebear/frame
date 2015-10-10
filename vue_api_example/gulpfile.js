@@ -85,6 +85,11 @@ gulp.task('watch', ["webpack", 'browser-sync'], function() {
             reload();
         });
     });
-    gulp.watch(src + "stylesheets/*.css",["sass"]).on("change",reload);
+
+    gulp.watch(src + "stylesheets/*.css",["sass"]).on("change",function(){
+        gulp.run("webpack",function(){
+            reload();
+        });
+    });
     gulp.watch('./webpack.config.js',["webpack"]).on("change",reload);
 });
