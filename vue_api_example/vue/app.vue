@@ -2,37 +2,45 @@
     <aside class="sidebar">
         <ul>
             <li>
-                1.指令
+                <a>1.指令</a>
+                <ul class="sidebar-ul">
+                    <li>
+                        <a>1.你好啊</a>
+                    </li>
+                </ul>
             </li>
             <li>
-                2.过滤器
+                <a>2.过滤器</a>
             </li>
             <li>
-                3.渲染列表
+                <a>3.渲染列表</a>
             </li>
             <li>
-                4.事件监听
+                <a>4.事件监听</a>
             </li>
             <li>
-                5.处理表单
+                <a>5.处理表单</a>
             </li>
             <li>
-                6.计算属性
+                <a>6.计算属性</a>
             </li>
             <li>
-                7.自定义指令
+                <a>7.自定义指令</a>
             </li>
             <li>
-                8.自定义过滤器
+                <a>8.自定义过滤器</a>
             </li>
             <li>
-                9.组件系统
+                <a>9.组件系统</a>
             </li>
             <li>
-                10.过渡效果
+                <a>10.过渡效果</a>
             </li>
         </ul>
     </aside>
+    <section>
+        <router-view></router-view>
+    </section>
 </template>
 
 <script>
