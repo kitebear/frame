@@ -33,7 +33,7 @@ var config = {
     webServer: {
         server: './',
         index: "index.html",
-        port: 3000,
+        port: 8888,
         logLevel: "debug",
         logPrefix: "xdh",
         open: true,

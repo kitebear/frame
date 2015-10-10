@@ -1,0 +1,89 @@
+@mixin max-screen($res) {
+  @media only screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin clear_fix {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
+@mixin middle() {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+@mixin radius($value: 5px) {
+  border-radius: $value;
+  -o-border-radius: $value;
+  -ms-border-radius: $value;
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+}
+
+@mixin transform-scale($x:1,$y:1){
+  transform: scale($x,$y);
+  -o-transform: scale($x,$y);
+  -ms-transform: scale($x,$y);
+  -moz-transform: scale($x,$y);
+  -webkit-transform: scale($x,$y);
+}
+
+/*---------------------------------------------------
+ *  transition 样式
+ *---------------------------------------------------*/
+@mixin default_transition($second: 0.2s, $type: ease) {
+  transition: all $second $type;
+  -o-transition: all $second $type;
+  -ms-transition: all $second $type;
+  -moz-transition: all $second $type;
+  -webkit-transition: all $second $type;
+}
+
+@mixin body-width() {
+  margin: 0 auto;
+  width: $body-width;
+}
+
+@mixin font-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin transform-translateY($translateY: -25%) {
+  transform: translateY($translateY);
+  -o-transform: translateY($translateY);
+  -ms-transform: translateY($translateY);
+  -moz-transform: translateY($translateY);
+  -webkit-transform: translateY($translateY);
+}
+
+@mixin animation($keyframes,$duration,$delay,$count,$function:linear,$direction:normal,$mode:forwards){
+  animation: $keyframes $duration $delay $count $function $direction $mode;
+  -o-margin: $keyframes $duration $delay $count $function $direction $mode;
+  -ms-margin: $keyframes $duration $delay $count $function $direction $mode;
+  -moz-margin: $keyframes $duration $delay $count $function $direction $mode;
+  -webkit-animation: $keyframes $duration $delay $count $function $direction $mode;
+}
+
+/*---------------------------------------------------
+ *  默认背景图片
+ *---------------------------------------------------*/
+@mixin default_bgimg($image_url, $position: 0 0) {
+  background: url($image_url) no-repeat $position!important;
+}
