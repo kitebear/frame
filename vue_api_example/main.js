@@ -19,8 +19,6 @@ require("./dist/stylesheets/vue.css");
 require("shCore");
 require("shBrushJScript");
 
-window.XRegExp = require("xregexp").XRegExp;
-
 App = Vue.extend();
 router = new VueRouter();
 

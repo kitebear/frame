@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2018e462-f825-4660-b5ad-87d4f556121e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/_theme_template.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/js/shBrushJScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/js/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/shCore.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/shCoreEmacs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/shThemeEmacs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue_api_example/dist/js/xregexp.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue_api_example/dist/js/xregexp.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery" afterPath="$PROJECT_DIR$/jquery" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/vue/app.vue" afterPath="$PROJECT_DIR$/vue_api_example/vue/app.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/dist/build.js" afterPath="$PROJECT_DIR$/vue_api_example/dist/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/main.js" afterPath="$PROJECT_DIR$/vue_api_example/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/vue/directives/simple_emp.vue" afterPath="$PROJECT_DIR$/vue_api_example/vue/directives/simple_emp.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/dist/vendor.bundle.js" afterPath="$PROJECT_DIR$/vue_api_example/dist/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.css.map" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.css" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.scss" afterPath="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue_api_example/webpack.config.js" afterPath="$PROJECT_DIR$/vue_api_example/webpack.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -54,8 +41,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue_api_example/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63419116">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.53911203">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -65,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/vue_api_example/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+              <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -131,8 +118,8 @@
         <option value="$PROJECT_DIR$/vue_api_example/vue/directives/inline_expressions.vue" />
         <option value="$PROJECT_DIR$/vue_api_example/dist/stylesheets/vue.scss" />
         <option value="$PROJECT_DIR$/vue_api_example/dist/stylesheets/shCoreEmacs.scss" />
-        <option value="$PROJECT_DIR$/vue_api_example/main.js" />
         <option value="$PROJECT_DIR$/vue_api_example/vue/directives/simple_emp.vue" />
+        <option value="$PROJECT_DIR$/vue_api_example/main.js" />
         <option value="$PROJECT_DIR$/vue_api_example/webpack.config.js" />
       </list>
     </option>
@@ -620,7 +607,7 @@
       <workItem from="1444445335608" duration="13386000" />
       <workItem from="1444613635602" duration="15364000" />
       <workItem from="1444639464781" duration="241000" />
-      <workItem from="1444640191844" duration="468000" />
+      <workItem from="1444640191844" duration="537000" />
     </task>
     <task id="LOCAL-00001" summary="vue演习">
       <created>1441682346407</created>
@@ -760,11 +747,17 @@
       <option name="project" value="LOCAL" />
       <updated>1444617892942</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="添加">
+      <created>1444641059067</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1444641059067</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99762000" />
+    <option name="totallyTimeSpent" value="99831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,14 +776,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23427041" sideWeight="0.49427754" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23427041" sideWeight="0.49427754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23427041" sideWeight="0.50572246" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931727" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32797858" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1153,14 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue_api_example/dist/js/xregexp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.90625">
-          <caret line="1876" column="5" selection-start-line="1876" selection-start-column="5" selection-end-line="1876" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue_api_example/dist/stylesheets/shCoreEmacs.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14423077">
@@ -1188,15 +1173,15 @@
     <entry file="file://$PROJECT_DIR$/vue_api_example/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_api_example/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63419116">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.53911203">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding />
         </state>
       </provider>

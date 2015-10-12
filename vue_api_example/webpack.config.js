@@ -48,8 +48,7 @@ module.exports = {
             ////模块别名定义，方便后续直接引用别名，无须多写长长的地址
             alias: {
                 shCore : 'js/shCore.js',
-                shBrushJScript : 'js/shBrushJScript.js',
-                xregexp : 'js/xregexp.js'
+                shBrushJScript : 'js/shBrushJScript.js'
             }
         }
 };
