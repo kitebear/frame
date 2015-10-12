@@ -91,5 +91,5 @@ gulp.task('watch', ["webpack", 'browser-sync'], function() {
             reload();
         });
     });
-    gulp.watch('./webpack.config.js',["webpack"]).on("change",reload);
+    gulp.watch(['./webpack.config.js','./main.js'],["webpack"]).on("change",reload);
 });

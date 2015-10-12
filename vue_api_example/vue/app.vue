@@ -2,10 +2,10 @@
     <aside class="sidebar">
         <ul>
             <li>
-                <a>1.指令</a>
+                <a class="sidebar-tree" v-link="{ name : 'Directives' }">1.指令</a>
                 <ul class="sidebar-ul">
                     <li>
-                        <a>1.你好啊</a>
+                        <a v-link="">1.简单事例</a>
                     </li>
                 </ul>
             </li>
@@ -44,5 +44,7 @@
 </template>
 
 <script>
-
+    $("body").delegate(".sidebar-tree","click",function(){
+        $(this).next().slideToggle("200", "linear");
+    });
 </script>

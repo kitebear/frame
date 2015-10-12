@@ -20,7 +20,13 @@ router = new VueRouter();
 
 router.map({
     '/': {
-        component: require('./vue/app.vue')
+        component: require('./vue/app.vue'),
+        subRoutes: {
+            '/Directives':{
+                name : "Directives",
+                component: require("./vue/directives/simple_emp.vue")
+            }
+        }
         //subRoutes: {
         //    '/media': {
         //        component: require('./views/media-view.vue')
@@ -49,4 +55,4 @@ router.map({
     }
 });
 
-router.start(App, '#vue-app');
+router.start(App, '.vue-app');

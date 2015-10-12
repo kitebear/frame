@@ -28,6 +28,10 @@ body {
   color: rgb(51, 51, 51);
 }
 
+body,html{
+  height: 100%;
+}
+
 body, figure {
   margin: 0px;
 }
@@ -66,8 +70,22 @@ body{
   }
 }
 
+.vue-app,.sidebar{
+  height: 100%;
+}
+
 .sidebar-ul{
+  display: none;
   a{
     padding-left: 2rem!important;
+  }
+}
+
+.vue-app{
+  >aside,>section{
+    float: left;
+    &:after{
+      @include clear_fix();
+    }
   }
 }
