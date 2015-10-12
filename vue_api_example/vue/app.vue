@@ -2,15 +2,18 @@
     <aside class="sidebar">
         <ul>
             <li>
-                <a class="sidebar-tree" v-link="{ name : 'Directives' }">1.指令</a>
+                <a class="sidebar-tree" >1.指令</a>
                 <ul class="sidebar-ul">
                     <li>
-                        <a v-link="">1.简单事例</a>
+                        <a v-link="{ name : 'simpleEmp' }">1.简单事例</a>
+                    </li>
+                    <li>
+                        <a v-link="{ name : 'inlineExp' }">2.内联表达式</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a>2.过滤器</a>
+                <a  >2.过滤器</a>
             </li>
             <li>
                 <a>3.渲染列表</a>
@@ -38,11 +41,10 @@
             </li>
         </ul>
     </aside>
-    <section>
+    <section class="content">
         <router-view></router-view>
     </section>
 </template>
-
 <script>
     $("body").delegate(".sidebar-tree","click",function(){
         $(this).next().slideToggle("200", "linear");

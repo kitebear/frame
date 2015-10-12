@@ -42,12 +42,14 @@ module.exports = {
         ],
         resolve: {
             //查找module的话从这里开始查找
-            //root: './dist/' //绝对路径
+            root: './dist/', //绝对路径
             ////自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
-            //extensions: ['', '.js', '.scss'],
+            extensions: ['', '.js', '.scss'],
             ////模块别名定义，方便后续直接引用别名，无须多写长长的地址
-            //alias: {
-            //    //util : 'javascripts/util.js'
-            //}
+            alias: {
+                shCore : 'js/shCore.js',
+                shBrushJScript : 'js/shBrushJScript.js',
+                xregexp : 'js/xregexp.js'
+            }
         }
 };

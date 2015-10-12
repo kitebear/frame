@@ -11,24 +11,34 @@ webpackJsonp([0],[
 	    ,router;
 
 	//加载组件
-	Vue = __webpack_require__(3);
-	Vue.use(__webpack_require__(71));
-	VueRouter = __webpack_require__(79);
+	Vue = __webpack_require__(4);
+	Vue.use(__webpack_require__(72));
+	VueRouter = __webpack_require__(80);
 	Vue.use(VueRouter);
 
 	//加载scss
-	__webpack_require__(111);
+	__webpack_require__(112);
+
+	//加载插件
+	__webpack_require__(116);
+	__webpack_require__(117);
+
+	window.XRegExp = __webpack_require__(118).XRegExp;
 
 	App = Vue.extend();
 	router = new VueRouter();
 
 	router.map({
 	    '/': {
-	        component: __webpack_require__(115),
+	        component: __webpack_require__(119),
 	        subRoutes: {
-	            '/Directives':{
-	                name : "Directives",
-	                component: __webpack_require__(118)
+	            '/simple_emp': {
+	                name : "simpleEmp",
+	                component: __webpack_require__(122)
+	            },
+	            '/inlineExp': {
+	                name : "inlineExp",
+	                component: __webpack_require__(125)
 	            }
 	        }
 	        //subRoutes: {
@@ -65,10 +75,11 @@ webpackJsonp([0],[
 /***/ },
 /* 1 */,
 /* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var extend = _.extend
 
 	/**
@@ -93,7 +104,7 @@ webpackJsonp([0],[
 	 * Mixin global API
 	 */
 
-	extend(Vue, __webpack_require__(13))
+	extend(Vue, __webpack_require__(14))
 
 	/**
 	 * Vue and every constructor that extends Vue has an
@@ -106,9 +117,9 @@ webpackJsonp([0],[
 
 	Vue.options = {
 	  replace: true,
-	  directives: __webpack_require__(29),
-	  elementDirectives: __webpack_require__(52),
-	  filters: __webpack_require__(55),
+	  directives: __webpack_require__(30),
+	  elementDirectives: __webpack_require__(53),
+	  filters: __webpack_require__(56),
 	  transitions: {},
 	  components: {},
 	  partials: {}
@@ -140,42 +151,42 @@ webpackJsonp([0],[
 	 * Mixin internal instance methods
 	 */
 
-	extend(p, __webpack_require__(57))
 	extend(p, __webpack_require__(58))
 	extend(p, __webpack_require__(59))
-	extend(p, __webpack_require__(63))
-	extend(p, __webpack_require__(65))
+	extend(p, __webpack_require__(60))
+	extend(p, __webpack_require__(64))
+	extend(p, __webpack_require__(66))
 
 	/**
 	 * Mixin public API methods
 	 */
 
-	extend(p, __webpack_require__(66))
 	extend(p, __webpack_require__(67))
 	extend(p, __webpack_require__(68))
 	extend(p, __webpack_require__(69))
 	extend(p, __webpack_require__(70))
+	extend(p, __webpack_require__(71))
 
 	module.exports = _.Vue = Vue
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var lang = __webpack_require__(5)
+	var lang = __webpack_require__(6)
 	var extend = lang.extend
 
 	extend(exports, lang)
-	extend(exports, __webpack_require__(6))
 	extend(exports, __webpack_require__(7))
-	extend(exports, __webpack_require__(10))
+	extend(exports, __webpack_require__(8))
 	extend(exports, __webpack_require__(11))
 	extend(exports, __webpack_require__(12))
+	extend(exports, __webpack_require__(13))
 
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	/**
@@ -491,7 +502,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	// can we use __proto__?
@@ -582,11 +593,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
 
 	/**
 	 * Query an element selector if it's not an element already.
@@ -858,10 +869,10 @@ webpackJsonp([0],[
 	    : document.createTextNode(persist ? ' ' : '')
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -958,7 +969,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1088,11 +1099,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
 	var extend = _.extend
 
 	/**
@@ -1449,13 +1460,13 @@ webpackJsonp([0],[
 	  return asset
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 
 	/**
 	 * Check if an element is a component, if yes return its
@@ -1580,10 +1591,10 @@ webpackJsonp([0],[
 	  return Object.prototype.toString.call(val).slice(8, -1)
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -1592,7 +1603,7 @@ webpackJsonp([0],[
 
 	if (process.env.NODE_ENV !== 'production') {
 
-	  var config = __webpack_require__(9)
+	  var config = __webpack_require__(10)
 	  var hasConsole = typeof console !== 'undefined'
 
 	  /**
@@ -1651,14 +1662,14 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
+	var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
 
 	/**
 	 * Expose useful internals
@@ -1667,14 +1678,14 @@ webpackJsonp([0],[
 	exports.util = _
 	exports.config = config
 	exports.nextTick = _.nextTick
-	exports.compiler = __webpack_require__(14)
+	exports.compiler = __webpack_require__(15)
 
 	exports.parsers = {
-	  path: __webpack_require__(24),
-	  text: __webpack_require__(17),
-	  template: __webpack_require__(26),
-	  directive: __webpack_require__(19),
-	  expression: __webpack_require__(23)
+	  path: __webpack_require__(25),
+	  text: __webpack_require__(18),
+	  template: __webpack_require__(27),
+	  directive: __webpack_require__(20),
+	  expression: __webpack_require__(24)
 	}
 
 	/**
@@ -1789,27 +1800,27 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var _ = __webpack_require__(4)
-
-	_.extend(exports, __webpack_require__(15))
-	_.extend(exports, __webpack_require__(28))
-
-
-/***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var compileProps = __webpack_require__(16)
-	var config = __webpack_require__(9)
-	var textParser = __webpack_require__(17)
-	var dirParser = __webpack_require__(19)
-	var templateParser = __webpack_require__(26)
+	var _ = __webpack_require__(5)
+
+	_.extend(exports, __webpack_require__(16))
+	_.extend(exports, __webpack_require__(29))
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var compileProps = __webpack_require__(17)
+	var config = __webpack_require__(10)
+	var textParser = __webpack_require__(18)
+	var dirParser = __webpack_require__(20)
+	var templateParser = __webpack_require__(27)
 	var resolveAsset = _.resolveAsset
-	var componentDef = __webpack_require__(27)
+	var componentDef = __webpack_require__(28)
 
 	// terminal directives
 	var terminalDirectives = [
@@ -2433,19 +2444,19 @@ webpackJsonp([0],[
 	  return a > b ? 1 : -1
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var textParser = __webpack_require__(17)
-	var propDef = __webpack_require__(20)
-	var propBindingModes = __webpack_require__(9)._propBindingModes
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var textParser = __webpack_require__(18)
+	var propDef = __webpack_require__(21)
+	var propBindingModes = __webpack_require__(10)._propBindingModes
 
 	// regexes
-	var identRE = __webpack_require__(24).identRE
+	var identRE = __webpack_require__(25).identRE
 	var dataAttrRE = /^data-/
 	var settablePathRE = /^[A-Za-z_$][\w$]*(\.[A-Za-z_$][\w$]*|\[[^\[\]]+\])*$/
 	var literalValueRE = /^(true|false)$|^\d.*/
@@ -2623,15 +2634,15 @@ webpackJsonp([0],[
 	    : def
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Cache = __webpack_require__(18)
-	var config = __webpack_require__(9)
-	var dirParser = __webpack_require__(19)
+	var Cache = __webpack_require__(19)
+	var config = __webpack_require__(10)
+	var dirParser = __webpack_require__(20)
 	var regexEscapeRE = /[-.*+?^${}()|[\]\/\\]/g
 	var cache, tagRE, htmlRE, firstChar, lastChar
 
@@ -2810,7 +2821,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports) {
 
 	/**
@@ -2928,11 +2939,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var Cache = __webpack_require__(18)
+	var _ = __webpack_require__(5)
+	var Cache = __webpack_require__(19)
 	var cache = new Cache(1000)
 	var argRE = /^[^\{\?]+$|^'[^']*'$|^"[^"]*"$/
 	var filterTokenRE = /[^\s'"]+|'[^']*'|"[^"]*"/g
@@ -3114,7 +3125,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// NOTE: the prop internal directive is compiled and linked
@@ -3122,9 +3133,9 @@ webpackJsonp([0],[
 	// The purpose is to make the initial prop values available
 	// inside `created` hooks and `data` functions.
 
-	var _ = __webpack_require__(4)
-	var Watcher = __webpack_require__(21)
-	var bindingModes = __webpack_require__(9)._propBindingModes
+	var _ = __webpack_require__(5)
+	var Watcher = __webpack_require__(22)
+	var bindingModes = __webpack_require__(10)._propBindingModes
 
 	module.exports = {
 
@@ -3182,14 +3193,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
-	var Dep = __webpack_require__(22)
-	var expParser = __webpack_require__(23)
-	var batcher = __webpack_require__(25)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
+	var Dep = __webpack_require__(23)
+	var expParser = __webpack_require__(24)
+	var batcher = __webpack_require__(26)
 	var uid = 0
 
 	/**
@@ -3498,13 +3509,13 @@ webpackJsonp([0],[
 
 	module.exports = Watcher
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var uid = 0
 
 	/**
@@ -3568,12 +3579,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var Path = __webpack_require__(24)
-	var Cache = __webpack_require__(18)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var Path = __webpack_require__(25)
+	var Cache = __webpack_require__(19)
 	var expressionCache = new Cache(1000)
 
 	var allowedKeywords =
@@ -3836,14 +3847,14 @@ webpackJsonp([0],[
 	    exp.slice(0, 5) !== 'Math.'
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var Cache = __webpack_require__(18)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var Cache = __webpack_require__(19)
 	var pathCache = new Cache(1000)
 	var identRE = exports.identRE = /^[$_a-zA-Z]+[\w$]*$/
 
@@ -4191,14 +4202,14 @@ webpackJsonp([0],[
 	  )
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
 
 	// we have two separate queues: one for directive updates
 	// and one for user watcher registered via $watch().
@@ -4296,14 +4307,14 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var Cache = __webpack_require__(18)
+	var _ = __webpack_require__(5)
+	var Cache = __webpack_require__(19)
 	var templateCache = new Cache(1000)
 	var idSelectorCache = new Cache(1000)
 
@@ -4593,12 +4604,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
-	var templateParser = __webpack_require__(26)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
+	var templateParser = __webpack_require__(27)
 
 	module.exports = {
 
@@ -4941,15 +4952,15 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
-	var templateParser = __webpack_require__(26)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
+	var templateParser = __webpack_require__(27)
 
 	/**
 	 * Process an element or a DocumentFragment based on a
@@ -5092,43 +5103,43 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
-
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// manipulation directives
-	exports.text = __webpack_require__(30)
-	exports.html = __webpack_require__(31)
-	exports.attr = __webpack_require__(32)
-	exports.show = __webpack_require__(33)
-	exports['class'] = __webpack_require__(35)
-	exports.el = __webpack_require__(36)
-	exports.ref = __webpack_require__(37)
-	exports.cloak = __webpack_require__(38)
-	exports.style = __webpack_require__(39)
-	exports.transition = __webpack_require__(40)
-
-	// event listener directives
-	exports.on = __webpack_require__(43)
-	exports.model = __webpack_require__(44)
-
-	// logic control directives
-	exports.repeat = __webpack_require__(50)
-	exports['if'] = __webpack_require__(51)
-
-	// internal directives that should not be used directly
-	// but we still want to expose them for advanced usage.
-	exports._component = __webpack_require__(27)
-	exports._prop = __webpack_require__(20)
-
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
 /* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	// manipulation directives
+	exports.text = __webpack_require__(31)
+	exports.html = __webpack_require__(32)
+	exports.attr = __webpack_require__(33)
+	exports.show = __webpack_require__(34)
+	exports['class'] = __webpack_require__(36)
+	exports.el = __webpack_require__(37)
+	exports.ref = __webpack_require__(38)
+	exports.cloak = __webpack_require__(39)
+	exports.style = __webpack_require__(40)
+	exports.transition = __webpack_require__(41)
+
+	// event listener directives
+	exports.on = __webpack_require__(44)
+	exports.model = __webpack_require__(45)
+
+	// logic control directives
+	exports.repeat = __webpack_require__(51)
+	exports['if'] = __webpack_require__(52)
+
+	// internal directives that should not be used directly
+	// but we still want to expose them for advanced usage.
+	exports._component = __webpack_require__(28)
+	exports._prop = __webpack_require__(21)
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -5145,11 +5156,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var templateParser = __webpack_require__(26)
+	var _ = __webpack_require__(5)
+	var templateParser = __webpack_require__(27)
 
 	module.exports = {
 
@@ -5191,7 +5202,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports) {
 
 	// xlink
@@ -5256,10 +5267,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var transition = __webpack_require__(34)
+	var transition = __webpack_require__(35)
 
 	module.exports = function (value) {
 	  var el = this.el
@@ -5270,10 +5281,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	/**
 	 * Append with transition.
@@ -5404,10 +5415,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var addClass = _.addClass
 	var removeClass = _.removeClass
 
@@ -5480,7 +5491,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -5498,10 +5509,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -5524,13 +5535,13 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var config = __webpack_require__(9)
+	var config = __webpack_require__(10)
 
 	module.exports = {
 	  bind: function () {
@@ -5543,10 +5554,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var prefixes = ['-webkit-', '-moz-', '-ms-']
 	var camelPrefixes = ['Webkit', 'Moz', 'ms']
 	var importantRE = /!important;?$/
@@ -5659,11 +5670,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var Transition = __webpack_require__(41)
+	var _ = __webpack_require__(5)
+	var Transition = __webpack_require__(42)
 
 	module.exports = {
 
@@ -5691,11 +5702,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var queue = __webpack_require__(42)
+	var _ = __webpack_require__(5)
+	var queue = __webpack_require__(43)
 	var addClass = _.addClass
 	var removeClass = _.removeClass
 	var transitionEndEvent = _.transitionEndEvent
@@ -6054,10 +6065,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var queue = []
 	var queued = false
 
@@ -6095,10 +6106,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -6158,19 +6169,19 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 
 	var handlers = {
-	  text: __webpack_require__(45),
-	  radio: __webpack_require__(47),
-	  select: __webpack_require__(48),
-	  checkbox: __webpack_require__(49)
+	  text: __webpack_require__(46),
+	  radio: __webpack_require__(48),
+	  select: __webpack_require__(49),
+	  checkbox: __webpack_require__(50)
 	}
 
 	module.exports = {
@@ -6247,13 +6258,13 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(jQuery) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -6386,14 +6397,14 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(46)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47)))
 
 /***/ },
-/* 46 */,
-/* 47 */
+/* 47 */,
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -6429,12 +6440,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var Watcher = __webpack_require__(21)
-	var dirParser = __webpack_require__(19)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var Watcher = __webpack_require__(22)
+	var dirParser = __webpack_require__(20)
 
 	module.exports = {
 
@@ -6669,13 +6680,13 @@ webpackJsonp([0],[
 	  return -1
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	module.exports = {
 
@@ -6720,17 +6731,17 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
 	var isObject = _.isObject
 	var isPlainObject = _.isPlainObject
-	var textParser = __webpack_require__(17)
-	var expParser = __webpack_require__(23)
-	var templateParser = __webpack_require__(26)
-	var compiler = __webpack_require__(14)
+	var textParser = __webpack_require__(18)
+	var expParser = __webpack_require__(24)
+	var templateParser = __webpack_require__(27)
+	var compiler = __webpack_require__(15)
 	var uid = 0
 
 	// async component resolution states
@@ -7494,17 +7505,17 @@ webpackJsonp([0],[
 	    type === 'boolean'
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var compiler = __webpack_require__(14)
-	var templateParser = __webpack_require__(26)
-	var transition = __webpack_require__(34)
-	var Cache = __webpack_require__(18)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var compiler = __webpack_require__(15)
+	var templateParser = __webpack_require__(27)
+	var transition = __webpack_require__(35)
+	var Cache = __webpack_require__(19)
 	var cache = new Cache(1000)
 
 	module.exports = {
@@ -7626,22 +7637,22 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
-
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports.content = __webpack_require__(53)
-	exports.partial = __webpack_require__(54)
-
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
 /* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var clone = __webpack_require__(26).clone
+	exports.content = __webpack_require__(54)
+	exports.partial = __webpack_require__(55)
+
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var _ = __webpack_require__(5)
+	var clone = __webpack_require__(27).clone
 
 	// This is the elementDirective that handles <content>
 	// transclusions. It relies on the raw content of an
@@ -7754,18 +7765,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var templateParser = __webpack_require__(26)
-	var textParser = __webpack_require__(17)
-	var compiler = __webpack_require__(14)
-	var Cache = __webpack_require__(18)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var templateParser = __webpack_require__(27)
+	var textParser = __webpack_require__(18)
+	var compiler = __webpack_require__(15)
+	var Cache = __webpack_require__(19)
 	var cache = new Cache(1000)
 
 	// v-partial reuses logic from v-if
-	var vIf = __webpack_require__(51)
+	var vIf = __webpack_require__(52)
 
 	module.exports = {
 
@@ -7831,13 +7842,13 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	/**
 	 * Stringify value.
@@ -7982,15 +7993,15 @@ webpackJsonp([0],[
 	 * Install special array filters
 	 */
 
-	_.extend(exports, __webpack_require__(56))
+	_.extend(exports, __webpack_require__(57))
 
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var Path = __webpack_require__(24)
+	var _ = __webpack_require__(5)
+	var Path = __webpack_require__(25)
 
 	/**
 	 * Filter filter for v-repeat
@@ -8089,10 +8100,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var mergeOptions = __webpack_require__(4).mergeOptions
+	var mergeOptions = __webpack_require__(5).mergeOptions
 
 	/**
 	 * The main init sequence. This is called for every
@@ -8184,10 +8195,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 	var inDoc = _.inDoc
 
 	/**
@@ -8327,17 +8338,17 @@ webpackJsonp([0],[
 	  this.$emit('hook:' + hook)
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var compiler = __webpack_require__(14)
-	var Observer = __webpack_require__(60)
-	var Dep = __webpack_require__(22)
-	var Watcher = __webpack_require__(21)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var compiler = __webpack_require__(15)
+	var Observer = __webpack_require__(61)
+	var Dep = __webpack_require__(23)
+	var Watcher = __webpack_require__(22)
 
 	/**
 	 * Setup the scope of an instance, which contains:
@@ -8616,18 +8627,18 @@ webpackJsonp([0],[
 	  })
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
-	var Dep = __webpack_require__(22)
-	var arrayMethods = __webpack_require__(61)
+	var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
+	var Dep = __webpack_require__(23)
+	var arrayMethods = __webpack_require__(62)
 	var arrayKeys = Object.getOwnPropertyNames(arrayMethods)
-	__webpack_require__(62)
+	__webpack_require__(63)
 
 	/**
 	 * Observer class that are attached to each observed
@@ -8859,10 +8870,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var arrayProto = Array.prototype
 	var arrayMethods = Object.create(arrayProto)
 
@@ -8963,10 +8974,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 	var objProto = Object.prototype
 
 	/**
@@ -9051,12 +9062,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var Directive = __webpack_require__(64)
-	var compiler = __webpack_require__(14)
+	var _ = __webpack_require__(5)
+	var Directive = __webpack_require__(65)
+	var compiler = __webpack_require__(15)
 
 	/**
 	 * Transclude, compile and link element.
@@ -9257,14 +9268,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var config = __webpack_require__(9)
-	var Watcher = __webpack_require__(21)
-	var textParser = __webpack_require__(17)
-	var expParser = __webpack_require__(23)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var config = __webpack_require__(10)
+	var Watcher = __webpack_require__(22)
+	var textParser = __webpack_require__(18)
+	var expParser = __webpack_require__(24)
 	function noop () {}
 
 	/**
@@ -9515,13 +9526,13 @@ webpackJsonp([0],[
 
 	module.exports = Directive
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
 
 	/**
 	 * Apply a list of filter (descriptors) to a value.
@@ -9615,17 +9626,17 @@ webpackJsonp([0],[
 	  }
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Watcher = __webpack_require__(21)
-	var Path = __webpack_require__(24)
-	var textParser = __webpack_require__(17)
-	var dirParser = __webpack_require__(19)
-	var expParser = __webpack_require__(23)
+	var Watcher = __webpack_require__(22)
+	var Path = __webpack_require__(25)
+	var textParser = __webpack_require__(18)
+	var dirParser = __webpack_require__(20)
+	var expParser = __webpack_require__(24)
 	var filterRE = /[^|]\|[^|]/
 
 	/**
@@ -9783,11 +9794,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
-	var transition = __webpack_require__(34)
+	var _ = __webpack_require__(5)
+	var transition = __webpack_require__(35)
 
 	/**
 	 * Convenience on-instance nextTick. The callback is
@@ -10015,10 +10026,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	/**
 	 * Listen on the given `event` with `fn`.
@@ -10195,10 +10206,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _ = __webpack_require__(4)
+	var _ = __webpack_require__(5)
 
 	/**
 	 * Create a child instance that prototypally inherits
@@ -10250,11 +10261,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(4)
-	var compiler = __webpack_require__(14)
+	/* WEBPACK VAR INJECTION */(function(process) {var _ = __webpack_require__(5)
+	var compiler = __webpack_require__(15)
 
 	/**
 	 * Set instance target element and kick off the compilation
@@ -10322,10 +10333,10 @@ webpackJsonp([0],[
 	  return compiler.compile(el, this.$options, true)(this, el, host)
 	}
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -10334,11 +10345,11 @@ webpackJsonp([0],[
 
 	function install(Vue) {
 
-	    var _ = __webpack_require__(72)(Vue);
+	    var _ = __webpack_require__(73)(Vue);
 
-	    Vue.url = __webpack_require__(73)(_);
-	    Vue.http = __webpack_require__(74)(_);
-	    Vue.resource = __webpack_require__(78)(_);
+	    Vue.url = __webpack_require__(74)(_);
+	    Vue.http = __webpack_require__(75)(_);
+	    Vue.resource = __webpack_require__(79)(_);
 
 	    Object.defineProperties(Vue.prototype, {
 
@@ -10370,7 +10381,7 @@ webpackJsonp([0],[
 	module.exports = install;
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports) {
 
 	/**
@@ -10456,7 +10467,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports) {
 
 	/**
@@ -10619,16 +10630,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Service for sending network requests.
 	 */
 
-	var xhr = __webpack_require__(75);
-	var jsonp = __webpack_require__(77);
-	var Promise = __webpack_require__(76);
+	var xhr = __webpack_require__(76);
+	var jsonp = __webpack_require__(78);
+	var Promise = __webpack_require__(77);
 
 	module.exports = function (_) {
 
@@ -10785,14 +10796,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * XMLHttp request.
 	 */
 
-	var Promise = __webpack_require__(76);
+	var Promise = __webpack_require__(77);
 	var XDomain = window.XDomainRequest;
 
 	module.exports = function (_, options) {
@@ -10842,7 +10853,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports) {
 
 	/**
@@ -11058,14 +11069,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * JSONP request.
 	 */
 
-	var Promise = __webpack_require__(76);
+	var Promise = __webpack_require__(77);
 
 	module.exports = function (_, options) {
 
@@ -11114,7 +11125,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports) {
 
 	/**
@@ -11231,56 +11242,56 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _classCallCheck = __webpack_require__(80)['default'];
+	var _classCallCheck = __webpack_require__(81)['default'];
 
-	var _interopRequireDefault = __webpack_require__(81)['default'];
+	var _interopRequireDefault = __webpack_require__(82)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _routeRecognizer = __webpack_require__(83);
+	var _routeRecognizer = __webpack_require__(84);
 
 	var _routeRecognizer2 = _interopRequireDefault(_routeRecognizer);
 
-	var _routerApi = __webpack_require__(86);
+	var _routerApi = __webpack_require__(87);
 
 	var _routerApi2 = _interopRequireDefault(_routerApi);
 
-	var _routerInternal = __webpack_require__(87);
+	var _routerInternal = __webpack_require__(88);
 
 	var _routerInternal2 = _interopRequireDefault(_routerInternal);
 
-	var _directivesView = __webpack_require__(105);
+	var _directivesView = __webpack_require__(106);
 
 	var _directivesView2 = _interopRequireDefault(_directivesView);
 
-	var _directivesLink = __webpack_require__(106);
+	var _directivesLink = __webpack_require__(107);
 
 	var _directivesLink2 = _interopRequireDefault(_directivesLink);
 
-	var _override = __webpack_require__(107);
+	var _override = __webpack_require__(108);
 
 	var _override2 = _interopRequireDefault(_override);
 
-	var _historyAbstract = __webpack_require__(108);
+	var _historyAbstract = __webpack_require__(109);
 
 	var _historyAbstract2 = _interopRequireDefault(_historyAbstract);
 
-	var _historyHash = __webpack_require__(109);
+	var _historyHash = __webpack_require__(110);
 
 	var _historyHash2 = _interopRequireDefault(_historyHash);
 
-	var _historyHtml5 = __webpack_require__(110);
+	var _historyHtml5 = __webpack_require__(111);
 
 	var _historyHtml52 = _interopRequireDefault(_historyHtml5);
 
@@ -11411,7 +11422,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11425,7 +11436,7 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11439,12 +11450,12 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _interopRequireDefault = __webpack_require__(81)['default'];
+	var _interopRequireDefault = __webpack_require__(82)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -11456,7 +11467,7 @@ webpackJsonp([0],[
 	exports.resolveAsyncComponent = resolveAsyncComponent;
 	exports.mapParams = mapParams;
 
-	var _routeRecognizer = __webpack_require__(83);
+	var _routeRecognizer = __webpack_require__(84);
 
 	var _routeRecognizer2 = _interopRequireDefault(_routeRecognizer);
 
@@ -11615,7 +11626,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module) {(function() {
@@ -12261,7 +12272,7 @@ webpackJsonp([0],[
 	    var $$route$recognizer$$default = $$route$recognizer$$RouteRecognizer;
 
 	    /* global define:true module:true window: true */
-	    if ("function" === 'function' && __webpack_require__(85)['amd']) {
+	    if ("function" === 'function' && __webpack_require__(86)['amd']) {
 	      !(__WEBPACK_AMD_DEFINE_RESULT__ = function() { return $$route$recognizer$$default; }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof module !== 'undefined' && module['exports']) {
 	      module['exports'] = $$route$recognizer$$default;
@@ -12271,10 +12282,10 @@ webpackJsonp([0],[
 	}).call(this);
 
 	//# sourceMappingURL=route-recognizer.js.map
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(84)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(85)(module)))
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -12290,14 +12301,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
 
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12306,7 +12317,7 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	exports['default'] = function (Vue, Router) {
 
@@ -12450,24 +12461,24 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _interopRequireDefault = __webpack_require__(81)['default'];
+	var _interopRequireDefault = __webpack_require__(82)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
-	var _route = __webpack_require__(88);
+	var _route = __webpack_require__(89);
 
 	var _route2 = _interopRequireDefault(_route);
 
-	var _transition = __webpack_require__(89);
+	var _transition = __webpack_require__(90);
 
 	var _transition2 = _interopRequireDefault(_transition);
 
@@ -12755,12 +12766,12 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _classCallCheck = __webpack_require__(80)["default"];
+	var _classCallCheck = __webpack_require__(81)["default"];
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -12811,22 +12822,22 @@ webpackJsonp([0],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = __webpack_require__(90)['default'];
+	var _createClass = __webpack_require__(91)['default'];
 
-	var _classCallCheck = __webpack_require__(80)['default'];
+	var _classCallCheck = __webpack_require__(81)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
-	var _pipeline = __webpack_require__(94);
+	var _pipeline = __webpack_require__(95);
 
 	/**
 	 * A RouteTransition object manages the pipeline of a
@@ -13119,12 +13130,12 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _Object$defineProperty = __webpack_require__(91)["default"];
+	var _Object$defineProperty = __webpack_require__(92)["default"];
 
 	exports["default"] = (function () {
 	  function defineProperties(target, props) {
@@ -13148,22 +13159,22 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 
 /***/ },
-/* 91 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(92), __esModule: true };
-
-/***/ },
 /* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var $ = __webpack_require__(93);
+	module.exports = { "default": __webpack_require__(93), __esModule: true };
+
+/***/ },
+/* 93 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $ = __webpack_require__(94);
 	module.exports = function defineProperty(it, key, desc){
 	  return $.setDesc(it, key, desc);
 	};
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports) {
 
 	var $Object = Object;
@@ -13181,12 +13192,12 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _Object$keys = __webpack_require__(95)['default'];
+	var _Object$keys = __webpack_require__(96)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
@@ -13198,7 +13209,7 @@ webpackJsonp([0],[
 	exports.activate = activate;
 	exports.reuse = reuse;
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	/**
 	 * Determine the reusability of an existing router view.
@@ -13436,43 +13447,43 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 95 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(96), __esModule: true };
-
-/***/ },
 /* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(97);
-	module.exports = __webpack_require__(103).Object.keys;
+	module.exports = { "default": __webpack_require__(97), __esModule: true };
 
 /***/ },
 /* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(98);
+	__webpack_require__(98);
+	module.exports = __webpack_require__(104).Object.keys;
 
-	__webpack_require__(100)('keys', function($keys){
+/***/ },
+/* 98 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.14 Object.keys(O)
+	var toObject = __webpack_require__(99);
+
+	__webpack_require__(101)('keys', function($keys){
 	  return function keys(it){
 	    return $keys(toObject(it));
 	  };
 	});
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(99);
+	var defined = __webpack_require__(100);
 	module.exports = function(it){
 	  return Object(defined(it));
 	};
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -13482,24 +13493,24 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
 	module.exports = function(KEY, exec){
-	  var $def = __webpack_require__(101)
-	    , fn   = (__webpack_require__(103).Object || {})[KEY] || Object[KEY]
+	  var $def = __webpack_require__(102)
+	    , fn   = (__webpack_require__(104).Object || {})[KEY] || Object[KEY]
 	    , exp  = {};
 	  exp[KEY] = exec(fn);
-	  $def($def.S + $def.F * __webpack_require__(104)(function(){ fn(1); }), 'Object', exp);
+	  $def($def.S + $def.F * __webpack_require__(105)(function(){ fn(1); }), 'Object', exp);
 	};
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var global    = __webpack_require__(102)
-	  , core      = __webpack_require__(103)
+	var global    = __webpack_require__(103)
+	  , core      = __webpack_require__(104)
 	  , PROTOTYPE = 'prototype';
 	var ctx = function(fn, that){
 	  return function(){
@@ -13547,7 +13558,7 @@ webpackJsonp([0],[
 	module.exports = $def;
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -13557,14 +13568,14 @@ webpackJsonp([0],[
 	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports) {
 
 	var core = module.exports = {version: '1.2.1'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports) {
 
 	module.exports = function(exec){
@@ -13576,7 +13587,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13585,9 +13596,9 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
-	var _pipeline = __webpack_require__(94);
+	var _pipeline = __webpack_require__(95);
 
 	exports['default'] = function (Vue) {
 
@@ -13671,7 +13682,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13680,7 +13691,7 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	var regexEscapeRE = /[-.*+?^${}()|[\]\/\\]/g;
 
@@ -13786,7 +13797,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports) {
 
 	// overriding Vue's $addChild method, so that every child
@@ -13834,20 +13845,20 @@ webpackJsonp([0],[
 	// instance inherits the route data
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = __webpack_require__(90)['default'];
+	var _createClass = __webpack_require__(91)['default'];
 
-	var _classCallCheck = __webpack_require__(80)['default'];
+	var _classCallCheck = __webpack_require__(81)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	var AbstractHistory = (function () {
 	  function AbstractHistory(_ref) {
@@ -13889,20 +13900,20 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = __webpack_require__(90)['default'];
+	var _createClass = __webpack_require__(91)['default'];
 
-	var _classCallCheck = __webpack_require__(80)['default'];
+	var _classCallCheck = __webpack_require__(81)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	var HashHistory = (function () {
 	  function HashHistory(_ref) {
@@ -13967,20 +13978,20 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = __webpack_require__(90)['default'];
+	var _createClass = __webpack_require__(91)['default'];
 
-	var _classCallCheck = __webpack_require__(80)['default'];
+	var _classCallCheck = __webpack_require__(81)['default'];
 
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
 
-	var _util = __webpack_require__(82);
+	var _util = __webpack_require__(83);
 
 	var hashRE = /#.*$/;
 
@@ -14071,16 +14082,16 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(112);
+	var content = __webpack_require__(113);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(114)(content, {});
+	var update = __webpack_require__(115)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -14097,21 +14108,21 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(113)();
+	exports = module.exports = __webpack_require__(114)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/*---------------------------------------------------\n *  transition 样式\n *---------------------------------------------------*/\n/*---------------------------------------------------\n *  默认背景图片\n *---------------------------------------------------*/\nbody {\n  background-color: white; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, textarea, th, td {\n  padding: 0;\n  margin: 0; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nimg {\n  border: 0; }\n\nol, ul {\n  list-style: none; }\n\nbody {\n  -webkit-font-smoothing: antialiased;\n  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 400;\n  overflow-x: hidden;\n  overflow-y: auto; }\n\nbody {\n  font-size: 10px;\n  line-height: 1.42857143;\n  color: #333333; }\n\nbody, html {\n  height: 100%; }\n\nbody, figure {\n  margin: 0px; }\n\n*, ::after, ::before {\n  box-sizing: border-box; }\n\nbody > h2 {\n  text-align: center;\n  background-color: #eee;\n  padding: 0.5rem;\n  font-size: 1.4rem;\n  border: 0.5rem solid #ddd; }\n\n.sidebar {\n  display: inline-block;\n  width: 200px;\n  border: 5px solid #ddd;\n  border-top: none;\n  border-bottom: none; }\n  .sidebar > ul a {\n    padding: 5px 0;\n    display: block;\n    font-size: 1rem;\n    cursor: pointer;\n    padding-left: 1rem; }\n    .sidebar > ul a:hover {\n      background-color: #dddddd; }\n\n.vue-app, .sidebar {\n  height: 100%; }\n\n.sidebar-ul {\n  display: none; }\n  .sidebar-ul a {\n    padding-left: 2rem !important; }\n\n.vue-app > aside, .vue-app > section {\n  float: left; }\n  .vue-app > aside:after, .vue-app > section:after {\n    content: \".\";\n    height: 0;\n    visibility: hidden;\n    display: block;\n    clear: both; }\n\n/*# sourceMappingURL=vue.css.map */\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";*,body,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,td,textarea,th,ul{padding:0;margin:0}*,body,figure{margin:0}.sidebar,.vue-app,body,html{height:100%}body{background-color:#fff;-webkit-font-smoothing:antialiased;font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;overflow-x:hidden;overflow-y:auto;font-size:10px;line-height:1.42857143;color:#333}table{border-collapse:collapse;border-spacing:0}img{border:0}ol,ul{list-style:none}a{text-decoration:none;color:#222}*,::after,::before{box-sizing:border-box}body>h2{text-align:center;background-color:#eee;padding:.5rem;font-size:1.4rem;border:.5rem solid #ddd}.sidebar{display:inline-block;width:200px;border:5px solid #ddd;border-top:none;border-bottom:none}.sidebar>ul a{padding:5px 0 5px 1rem;display:block;font-size:1rem;cursor:pointer}.sidebar>ul a:hover{background-color:#6495ed}.sidebar-ul{display:none}.sidebar-ul a{padding-left:2rem!important}.vue-app>aside,.vue-app>section{float:left}.vue-app>aside:after,.vue-app>section:after{content:\".\";height:0;visibility:hidden;display:block;clear:both}.vue-app>section{width:100%;height:100%;padding:20px 220px 20px 20px;margin-right:-200px}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.content h2{font-size:1.5rem;margin:1rem 0 .8rem;padding-bottom:.7rem;border-bottom:1px solid #ddd}.syntaxhighlighter a,.syntaxhighlighter code,.syntaxhighlighter div,.syntaxhighlighter table,.syntaxhighlighter table caption,.syntaxhighlighter table tbody,.syntaxhighlighter table td,.syntaxhighlighter table thead,.syntaxhighlighter table tr,.syntaxhighlighter textarea{-moz-border-radius:0!important;-webkit-border-radius:0!important;background:0 0!important;border:0!important;bottom:auto!important;float:none!important;height:auto!important;left:auto!important;line-height:1.1em!important;margin:0!important;outline:0!important;overflow:visible!important;padding:0!important;position:static!important;right:auto!important;text-align:left!important;top:auto!important;vertical-align:baseline!important;width:auto!important;box-sizing:content-box!important;font-family:Consolas,\"Bitstream Vera Sans Mono\",\"Courier New\",Courier,monospace!important;font-weight:400!important;font-style:normal!important;font-size:1em!important;min-height:inherit!important;min-height:auto!important}.syntaxhighlighter,.syntaxhighlighter table td.code .container{position:relative!important}.syntaxhighlighter,.syntaxhighlighter table,.syntaxhighlighter table td.code{width:100%!important}.syntaxhighlighter .bold,.syntaxhighlighter .script,.syntaxhighlighter.printing .script{font-weight:700!important}.syntaxhighlighter{margin:1em 0!important;overflow:auto!important}.syntaxhighlighter.source{overflow:hidden!important}.syntaxhighlighter .italic{font-style:italic!important}.syntaxhighlighter .line{white-space:pre!important}.syntaxhighlighter table caption{text-align:left!important;padding:.5em 0 .5em 1em!important}.syntaxhighlighter table td.code .container textarea{box-sizing:border-box!important;position:absolute!important;left:0!important;top:0!important;width:100%!important;height:100%!important;border:none!important;background:#fff!important;padding-left:1em!important;overflow:hidden!important;white-space:pre!important}.syntaxhighlighter table td.gutter .line{text-align:right!important;padding:0 .5em 0 1em!important}.syntaxhighlighter table td.code .line{padding:0 1em!important}.syntaxhighlighter.nogutter td.code .container textarea,.syntaxhighlighter.nogutter td.code .line{padding-left:0!important}.syntaxhighlighter.show{display:block!important}.syntaxhighlighter.collapsed table{display:none!important}.syntaxhighlighter.collapsed .toolbar{padding:.1em .8em 0!important;font-size:1em!important;position:static!important;width:auto!important;height:auto!important}.syntaxhighlighter.collapsed .toolbar span{display:inline!important;margin-right:1em!important}.syntaxhighlighter.collapsed .toolbar span a{padding:0!important;display:none!important}.syntaxhighlighter .toolbar span.title,.syntaxhighlighter.collapsed .toolbar span a.expandSource{display:inline!important}.syntaxhighlighter .toolbar{position:absolute!important;right:1px!important;top:1px!important;width:11px!important;height:11px!important;font-size:10px!important;z-index:10!important}.syntaxhighlighter .toolbar a{display:block!important;text-align:center!important;text-decoration:none!important;padding-top:1px!important}.syntaxhighlighter .toolbar a.expandSource,.syntaxhighlighter.printing .toolbar{display:none!important}.syntaxhighlighter.ie{font-size:.9em!important;padding:1px 0!important}.syntaxhighlighter.ie .toolbar{line-height:8px!important}.syntaxhighlighter.ie .toolbar a{padding-top:0!important}.syntaxhighlighter.printing .line.alt1 .content,.syntaxhighlighter.printing .line.alt2 .content,.syntaxhighlighter.printing .line.highlighted .number,.syntaxhighlighter.printing .line.highlighted.alt1 .content,.syntaxhighlighter.printing .line.highlighted.alt2 .content{background:0 0!important}.syntaxhighlighter.printing .line .number{color:#bbb!important}.syntaxhighlighter.printing .line .content,.syntaxhighlighter.printing .plain,.syntaxhighlighter.printing .plain a{color:#000!important}.syntaxhighlighter.printing a{text-decoration:none!important}.syntaxhighlighter.printing .comments,.syntaxhighlighter.printing .comments a{color:#008200!important}.syntaxhighlighter.printing .string,.syntaxhighlighter.printing .string a{color:#00f!important}.syntaxhighlighter.printing .keyword{color:#069!important;font-weight:700!important}.syntaxhighlighter.printing .preprocessor{color:gray!important}.syntaxhighlighter.printing .variable{color:#a70!important}.syntaxhighlighter.printing .value{color:#090!important}.syntaxhighlighter.printing .functions{color:#ff1493!important}.syntaxhighlighter.printing .constants{color:#06c!important}.syntaxhighlighter.printing .color1,.syntaxhighlighter.printing .color1 a{color:gray!important}.syntaxhighlighter.printing .color2,.syntaxhighlighter.printing .color2 a{color:#ff1493!important}.syntaxhighlighter.printing .color3,.syntaxhighlighter.printing .color3 a{color:red!important}.syntaxhighlighter.printing .break,.syntaxhighlighter.printing .break a{color:#000!important}.syntaxhighlighter,.syntaxhighlighter .line.alt1,.syntaxhighlighter .line.alt2{background-color:#000!important}.syntaxhighlighter .line.highlighted.alt1,.syntaxhighlighter .line.highlighted.alt2{background-color:#2A3133!important}.syntaxhighlighter .line.highlighted.number{color:#fff!important}.syntaxhighlighter .gutter,.syntaxhighlighter table caption{color:#d3d3d3!important}.syntaxhighlighter .gutter .line{border-right:3px solid #900!important}.syntaxhighlighter .gutter .line.highlighted{background-color:#900!important;color:#000!important}.syntaxhighlighter.printing .line .content{border:none!important}.syntaxhighlighter.collapsed{overflow:visible!important}.syntaxhighlighter.collapsed .toolbar{color:#ebdb8d!important;background:#000!important;border:1px solid #900!important}.syntaxhighlighter.collapsed .toolbar a{color:#ebdb8d!important}.syntaxhighlighter.collapsed .toolbar a:hover{color:#ff7d27!important}.syntaxhighlighter .toolbar{color:#fff!important;background:#900!important;border:none!important}.syntaxhighlighter .toolbar a{color:#fff!important}.syntaxhighlighter .toolbar a:hover{color:#9ccff4!important}.syntaxhighlighter .plain,.syntaxhighlighter .plain a{color:#d3d3d3!important}.syntaxhighlighter .comments,.syntaxhighlighter .comments a{color:#ff7d27!important}.syntaxhighlighter .string,.syntaxhighlighter .string a{color:#ff9e7b!important}.syntaxhighlighter .keyword{color:#0ff!important}.syntaxhighlighter .preprocessor{color:#aec4de!important}.syntaxhighlighter .variable{color:#ffaa3e!important}.syntaxhighlighter .value{color:#090!important}.syntaxhighlighter .functions{color:#81cef9!important}.syntaxhighlighter .constants{color:#ff9e7b!important}.syntaxhighlighter .script{color:#0ff!important;background-color:none!important}.syntaxhighlighter .color1,.syntaxhighlighter .color1 a{color:#ebdb8d!important}.syntaxhighlighter .color2,.syntaxhighlighter .color2 a{color:#ff7d27!important}.syntaxhighlighter .color3,.syntaxhighlighter .color3 a{color:#aec4de!important}.syntaxhighlighter{padding:1rem;font-size:1rem!important}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports) {
 
 	/*
@@ -14167,7 +14178,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -14392,40 +14403,2048 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 115 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(116)
-	module.exports.template = __webpack_require__(117)
-
-
-/***/ },
 /* 116 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function($) {$("body").delegate(".sidebar-tree","click",function(){
-	        $(this).next().slideToggle("200", "linear");
-	    });
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(46)))
+	/**
+	 * SyntaxHighlighter
+	 * http://alexgorbatchev.com/SyntaxHighlighter
+	 *
+	 * SyntaxHighlighter is donationware. If you are using it, please donate.
+	 * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+	 *
+	 * @version
+	 * 3.0.83 (July 02 2010)
+	 * 
+	 * @copyright
+	 * Copyright (C) 2004-2010 Alex Gorbatchev.
+	 *
+	 * @license
+	 * Dual licensed under the MIT and GPL licenses.
+	 */
+	eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('K M;I(M)1S 2U("2a\'t 4k M 4K 2g 3l 4G 4H");(6(){6 r(f,e){I(!M.1R(f))1S 3m("3s 15 4R");K a=f.1w;f=M(f.1m,t(f)+(e||""));I(a)f.1w={1m:a.1m,19:a.19?a.19.1a(0):N};H f}6 t(f){H(f.1J?"g":"")+(f.4s?"i":"")+(f.4p?"m":"")+(f.4v?"x":"")+(f.3n?"y":"")}6 B(f,e,a,b){K c=u.L,d,h,g;v=R;5K{O(;c--;){g=u[c];I(a&g.3r&&(!g.2p||g.2p.W(b))){g.2q.12=e;I((h=g.2q.X(f))&&h.P===e){d={3k:g.2b.W(b,h,a),1C:h};1N}}}}5v(i){1S i}5q{v=11}H d}6 p(f,e,a){I(3b.Z.1i)H f.1i(e,a);O(a=a||0;a<f.L;a++)I(f[a]===e)H a;H-1}M=6(f,e){K a=[],b=M.1B,c=0,d,h;I(M.1R(f)){I(e!==1d)1S 3m("2a\'t 5r 5I 5F 5B 5C 15 5E 5p");H r(f)}I(v)1S 2U("2a\'t W 3l M 59 5m 5g 5x 5i");e=e||"";O(d={2N:11,19:[],2K:6(g){H e.1i(g)>-1},3d:6(g){e+=g}};c<f.L;)I(h=B(f,c,b,d)){a.U(h.3k);c+=h.1C[0].L||1}Y I(h=n.X.W(z[b],f.1a(c))){a.U(h[0]);c+=h[0].L}Y{h=f.3a(c);I(h==="[")b=M.2I;Y I(h==="]")b=M.1B;a.U(h);c++}a=15(a.1K(""),n.Q.W(e,w,""));a.1w={1m:f,19:d.2N?d.19:N};H a};M.3v="1.5.0";M.2I=1;M.1B=2;K C=/\\$(?:(\\d\\d?|[$&`\'])|{([$\\w]+)})/g,w=/[^5h]+|([\\s\\S])(?=[\\s\\S]*\\1)/g,A=/^(?:[?*+]|{\\d+(?:,\\d*)?})\\??/,v=11,u=[],n={X:15.Z.X,1A:15.Z.1A,1C:1r.Z.1C,Q:1r.Z.Q,1e:1r.Z.1e},x=n.X.W(/()??/,"")[1]===1d,D=6(){K f=/^/g;n.1A.W(f,"");H!f.12}(),y=6(){K f=/x/g;n.Q.W("x",f,"");H!f.12}(),E=15.Z.3n!==1d,z={};z[M.2I]=/^(?:\\\\(?:[0-3][0-7]{0,2}|[4-7][0-7]?|x[\\29-26-f]{2}|u[\\29-26-f]{4}|c[A-3o-z]|[\\s\\S]))/;z[M.1B]=/^(?:\\\\(?:0(?:[0-3][0-7]{0,2}|[4-7][0-7]?)?|[1-9]\\d*|x[\\29-26-f]{2}|u[\\29-26-f]{4}|c[A-3o-z]|[\\s\\S])|\\(\\?[:=!]|[?*+]\\?|{\\d+(?:,\\d*)?}\\??)/;M.1h=6(f,e,a,b){u.U({2q:r(f,"g"+(E?"y":"")),2b:e,3r:a||M.1B,2p:b||N})};M.2n=6(f,e){K a=f+"/"+(e||"");H M.2n[a]||(M.2n[a]=M(f,e))};M.3c=6(f){H r(f,"g")};M.5l=6(f){H f.Q(/[-[\\]{}()*+?.,\\\\^$|#\\s]/g,"\\\\$&")};M.5e=6(f,e,a,b){e=r(e,"g"+(b&&E?"y":""));e.12=a=a||0;f=e.X(f);H b?f&&f.P===a?f:N:f};M.3q=6(){M.1h=6(){1S 2U("2a\'t 55 1h 54 3q")}};M.1R=6(f){H 53.Z.1q.W(f)==="[2m 15]"};M.3p=6(f,e,a,b){O(K c=r(e,"g"),d=-1,h;h=c.X(f);){a.W(b,h,++d,f,c);c.12===h.P&&c.12++}I(e.1J)e.12=0};M.57=6(f,e){H 6 a(b,c){K d=e[c].1I?e[c]:{1I:e[c]},h=r(d.1I,"g"),g=[],i;O(i=0;i<b.L;i++)M.3p(b[i],h,6(k){g.U(d.3j?k[d.3j]||"":k[0])});H c===e.L-1||!g.L?g:a(g,c+1)}([f],0)};15.Z.1p=6(f,e){H J.X(e[0])};15.Z.W=6(f,e){H J.X(e)};15.Z.X=6(f){K e=n.X.1p(J,14),a;I(e){I(!x&&e.L>1&&p(e,"")>-1){a=15(J.1m,n.Q.W(t(J),"g",""));n.Q.W(f.1a(e.P),a,6(){O(K c=1;c<14.L-2;c++)I(14[c]===1d)e[c]=1d})}I(J.1w&&J.1w.19)O(K b=1;b<e.L;b++)I(a=J.1w.19[b-1])e[a]=e[b];!D&&J.1J&&!e[0].L&&J.12>e.P&&J.12--}H e};I(!D)15.Z.1A=6(f){(f=n.X.W(J,f))&&J.1J&&!f[0].L&&J.12>f.P&&J.12--;H!!f};1r.Z.1C=6(f){M.1R(f)||(f=15(f));I(f.1J){K e=n.1C.1p(J,14);f.12=0;H e}H f.X(J)};1r.Z.Q=6(f,e){K a=M.1R(f),b,c;I(a&&1j e.58()==="3f"&&e.1i("${")===-1&&y)H n.Q.1p(J,14);I(a){I(f.1w)b=f.1w.19}Y f+="";I(1j e==="6")c=n.Q.W(J,f,6(){I(b){14[0]=1f 1r(14[0]);O(K d=0;d<b.L;d++)I(b[d])14[0][b[d]]=14[d+1]}I(a&&f.1J)f.12=14[14.L-2]+14[0].L;H e.1p(N,14)});Y{c=J+"";c=n.Q.W(c,f,6(){K d=14;H n.Q.W(e,C,6(h,g,i){I(g)5b(g){24"$":H"$";24"&":H d[0];24"`":H d[d.L-1].1a(0,d[d.L-2]);24"\'":H d[d.L-1].1a(d[d.L-2]+d[0].L);5a:i="";g=+g;I(!g)H h;O(;g>d.L-3;){i=1r.Z.1a.W(g,-1)+i;g=1Q.3i(g/10)}H(g?d[g]||"":"$")+i}Y{g=+i;I(g<=d.L-3)H d[g];g=b?p(b,i):-1;H g>-1?d[g+1]:h}})})}I(a&&f.1J)f.12=0;H c};1r.Z.1e=6(f,e){I(!M.1R(f))H n.1e.1p(J,14);K a=J+"",b=[],c=0,d,h;I(e===1d||+e<0)e=5D;Y{e=1Q.3i(+e);I(!e)H[]}O(f=M.3c(f);d=f.X(a);){I(f.12>c){b.U(a.1a(c,d.P));d.L>1&&d.P<a.L&&3b.Z.U.1p(b,d.1a(1));h=d[0].L;c=f.12;I(b.L>=e)1N}f.12===d.P&&f.12++}I(c===a.L){I(!n.1A.W(f,"")||h)b.U("")}Y b.U(a.1a(c));H b.L>e?b.1a(0,e):b};M.1h(/\\(\\?#[^)]*\\)/,6(f){H n.1A.W(A,f.2S.1a(f.P+f[0].L))?"":"(?:)"});M.1h(/\\((?!\\?)/,6(){J.19.U(N);H"("});M.1h(/\\(\\?<([$\\w]+)>/,6(f){J.19.U(f[1]);J.2N=R;H"("});M.1h(/\\\\k<([\\w$]+)>/,6(f){K e=p(J.19,f[1]);H e>-1?"\\\\"+(e+1)+(3R(f.2S.3a(f.P+f[0].L))?"":"(?:)"):f[0]});M.1h(/\\[\\^?]/,6(f){H f[0]==="[]"?"\\\\b\\\\B":"[\\\\s\\\\S]"});M.1h(/^\\(\\?([5A]+)\\)/,6(f){J.3d(f[1]);H""});M.1h(/(?:\\s+|#.*)+/,6(f){H n.1A.W(A,f.2S.1a(f.P+f[0].L))?"":"(?:)"},M.1B,6(){H J.2K("x")});M.1h(/\\./,6(){H"[\\\\s\\\\S]"},M.1B,6(){H J.2K("s")})})();1j 2e!="1d"&&(2e.M=M);K 1v=6(){6 r(a,b){a.1l.1i(b)!=-1||(a.1l+=" "+b)}6 t(a){H a.1i("3e")==0?a:"3e"+a}6 B(a){H e.1Y.2A[t(a)]}6 p(a,b,c){I(a==N)H N;K d=c!=R?a.3G:[a.2G],h={"#":"1c",".":"1l"}[b.1o(0,1)]||"3h",g,i;g=h!="3h"?b.1o(1):b.5u();I((a[h]||"").1i(g)!=-1)H a;O(a=0;d&&a<d.L&&i==N;a++)i=p(d[a],b,c);H i}6 C(a,b){K c={},d;O(d 2g a)c[d]=a[d];O(d 2g b)c[d]=b[d];H c}6 w(a,b,c,d){6 h(g){g=g||1P.5y;I(!g.1F){g.1F=g.52;g.3N=6(){J.5w=11}}c.W(d||1P,g)}a.3g?a.3g("4U"+b,h):a.4y(b,h,11)}6 A(a,b){K c=e.1Y.2j,d=N;I(c==N){c={};O(K h 2g e.1U){K g=e.1U[h];d=g.4x;I(d!=N){g.1V=h.4w();O(g=0;g<d.L;g++)c[d[g]]=h}}e.1Y.2j=c}d=e.1U[c[a]];d==N&&b!=11&&1P.1X(e.13.1x.1X+(e.13.1x.3E+a));H d}6 v(a,b){O(K c=a.1e("\\n"),d=0;d<c.L;d++)c[d]=b(c[d],d);H c.1K("\\n")}6 u(a,b){I(a==N||a.L==0||a=="\\n")H a;a=a.Q(/</g,"&1y;");a=a.Q(/ {2,}/g,6(c){O(K d="",h=0;h<c.L-1;h++)d+=e.13.1W;H d+" "});I(b!=N)a=v(a,6(c){I(c.L==0)H"";K d="";c=c.Q(/^(&2s;| )+/,6(h){d=h;H""});I(c.L==0)H d;H d+\'<17 1g="\'+b+\'">\'+c+"</17>"});H a}6 n(a,b){a.1e("\\n");O(K c="",d=0;d<50;d++)c+="                    ";H a=v(a,6(h){I(h.1i("\\t")==-1)H h;O(K g=0;(g=h.1i("\\t"))!=-1;)h=h.1o(0,g)+c.1o(0,b-g%b)+h.1o(g+1,h.L);H h})}6 x(a){H a.Q(/^\\s+|\\s+$/g,"")}6 D(a,b){I(a.P<b.P)H-1;Y I(a.P>b.P)H 1;Y I(a.L<b.L)H-1;Y I(a.L>b.L)H 1;H 0}6 y(a,b){6 c(k){H k[0]}O(K d=N,h=[],g=b.2D?b.2D:c;(d=b.1I.X(a))!=N;){K i=g(d,b);I(1j i=="3f")i=[1f e.2L(i,d.P,b.23)];h=h.1O(i)}H h}6 E(a){K b=/(.*)((&1G;|&1y;).*)/;H a.Q(e.3A.3M,6(c){K d="",h=N;I(h=b.X(c)){c=h[1];d=h[2]}H\'<a 2h="\'+c+\'">\'+c+"</a>"+d})}6 z(){O(K a=1E.36("1k"),b=[],c=0;c<a.L;c++)a[c].3s=="20"&&b.U(a[c]);H b}6 f(a){a=a.1F;K b=p(a,".20",R);a=p(a,".3O",R);K c=1E.4i("3t");I(!(!a||!b||p(a,"3t"))){B(b.1c);r(b,"1m");O(K d=a.3G,h=[],g=0;g<d.L;g++)h.U(d[g].4z||d[g].4A);h=h.1K("\\r");c.39(1E.4D(h));a.39(c);c.2C();c.4C();w(c,"4u",6(){c.2G.4E(c);b.1l=b.1l.Q("1m","")})}}I(1j 3F!="1d"&&1j M=="1d")M=3F("M").M;K e={2v:{"1g-27":"","2i-1s":1,"2z-1s-2t":11,1M:N,1t:N,"42-45":R,"43-22":4,1u:R,16:R,"3V-17":R,2l:11,"41-40":R,2k:11,"1z-1k":11},13:{1W:"&2s;",2M:R,46:11,44:11,34:"4n",1x:{21:"4o 1m",2P:"?",1X:"1v\\n\\n",3E:"4r\'t 4t 1D O: ",4g:"4m 4B\'t 51 O 1z-1k 4F: ",37:\'<!4T 1z 4S "-//4V//3H 4W 1.0 4Z//4Y" "1Z://2y.3L.3K/4X/3I/3H/3I-4P.4J"><1z 4I="1Z://2y.3L.3K/4L/5L"><3J><4N 1Z-4M="5G-5M" 6K="2O/1z; 6J=6I-8" /><1t>6L 1v</1t></3J><3B 1L="25-6M:6Q,6P,6O,6N-6F;6y-2f:#6x;2f:#6w;25-22:6v;2O-3D:3C;"><T 1L="2O-3D:3C;3w-32:1.6z;"><T 1L="25-22:6A-6E;">1v</T><T 1L="25-22:.6C;3w-6B:6R;"><T>3v 3.0.76 (72 73 3x)</T><T><a 2h="1Z://3u.2w/1v" 1F="38" 1L="2f:#3y">1Z://3u.2w/1v</a></T><T>70 17 6U 71.</T><T>6T 6X-3x 6Y 6D.</T></T><T>6t 61 60 J 1k, 5Z <a 2h="6u://2y.62.2w/63-66/65?64=5X-5W&5P=5O" 1L="2f:#3y">5R</a> 5V <2R/>5U 5T 5S!</T></T></3B></1z>\'}},1Y:{2j:N,2A:{}},1U:{},3A:{6n:/\\/\\*[\\s\\S]*?\\*\\//2c,6m:/\\/\\/.*$/2c,6l:/#.*$/2c,6k:/"([^\\\\"\\n]|\\\\.)*"/g,6o:/\'([^\\\\\'\\n]|\\\\.)*\'/g,6p:1f M(\'"([^\\\\\\\\"]|\\\\\\\\.)*"\',"3z"),6s:1f M("\'([^\\\\\\\\\']|\\\\\\\\.)*\'","3z"),6q:/(&1y;|<)!--[\\s\\S]*?--(&1G;|>)/2c,3M:/\\w+:\\/\\/[\\w-.\\/?%&=:@;]*/g,6a:{18:/(&1y;|<)\\?=?/g,1b:/\\?(&1G;|>)/g},69:{18:/(&1y;|<)%=?/g,1b:/%(&1G;|>)/g},6d:{18:/(&1y;|<)\\s*1k.*?(&1G;|>)/2T,1b:/(&1y;|<)\\/\\s*1k\\s*(&1G;|>)/2T}},16:{1H:6(a){6 b(i,k){H e.16.2o(i,k,e.13.1x[k])}O(K c=\'<T 1g="16">\',d=e.16.2x,h=d.2X,g=0;g<h.L;g++)c+=(d[h[g]].1H||b)(a,h[g]);c+="</T>";H c},2o:6(a,b,c){H\'<2W><a 2h="#" 1g="6e 6h\'+b+" "+b+\'">\'+c+"</a></2W>"},2b:6(a){K b=a.1F,c=b.1l||"";b=B(p(b,".20",R).1c);K d=6(h){H(h=15(h+"6f(\\\\w+)").X(c))?h[1]:N}("6g");b&&d&&e.16.2x[d].2B(b);a.3N()},2x:{2X:["21","2P"],21:{1H:6(a){I(a.V("2l")!=R)H"";K b=a.V("1t");H e.16.2o(a,"21",b?b:e.13.1x.21)},2B:6(a){a=1E.6j(t(a.1c));a.1l=a.1l.Q("47","")}},2P:{2B:6(){K a="68=0";a+=", 18="+(31.30-33)/2+", 32="+(31.2Z-2Y)/2+", 30=33, 2Z=2Y";a=a.Q(/^,/,"");a=1P.6Z("","38",a);a.2C();K b=a.1E;b.6W(e.13.1x.37);b.6V();a.2C()}}}},35:6(a,b){K c;I(b)c=[b];Y{c=1E.36(e.13.34);O(K d=[],h=0;h<c.L;h++)d.U(c[h]);c=d}c=c;d=[];I(e.13.2M)c=c.1O(z());I(c.L===0)H d;O(h=0;h<c.L;h++){O(K g=c[h],i=a,k=c[h].1l,j=3W 0,l={},m=1f M("^\\\\[(?<2V>(.*?))\\\\]$"),s=1f M("(?<27>[\\\\w-]+)\\\\s*:\\\\s*(?<1T>[\\\\w-%#]+|\\\\[.*?\\\\]|\\".*?\\"|\'.*?\')\\\\s*;?","g");(j=s.X(k))!=N;){K o=j.1T.Q(/^[\'"]|[\'"]$/g,"");I(o!=N&&m.1A(o)){o=m.X(o);o=o.2V.L>0?o.2V.1e(/\\s*,\\s*/):[]}l[j.27]=o}g={1F:g,1n:C(i,l)};g.1n.1D!=N&&d.U(g)}H d},1M:6(a,b){K c=J.35(a,b),d=N,h=e.13;I(c.L!==0)O(K g=0;g<c.L;g++){b=c[g];K i=b.1F,k=b.1n,j=k.1D,l;I(j!=N){I(k["1z-1k"]=="R"||e.2v["1z-1k"]==R){d=1f e.4l(j);j="4O"}Y I(d=A(j))d=1f d;Y 6H;l=i.3X;I(h.2M){l=l;K m=x(l),s=11;I(m.1i("<![6G[")==0){m=m.4h(9);s=R}K o=m.L;I(m.1i("]]\\>")==o-3){m=m.4h(0,o-3);s=R}l=s?m:l}I((i.1t||"")!="")k.1t=i.1t;k.1D=j;d.2Q(k);b=d.2F(l);I((i.1c||"")!="")b.1c=i.1c;i.2G.74(b,i)}}},2E:6(a){w(1P,"4k",6(){e.1M(a)})}};e.2E=e.2E;e.1M=e.1M;e.2L=6(a,b,c){J.1T=a;J.P=b;J.L=a.L;J.23=c;J.1V=N};e.2L.Z.1q=6(){H J.1T};e.4l=6(a){6 b(j,l){O(K m=0;m<j.L;m++)j[m].P+=l}K c=A(a),d,h=1f e.1U.5Y,g=J,i="2F 1H 2Q".1e(" ");I(c!=N){d=1f c;O(K k=0;k<i.L;k++)(6(){K j=i[k];g[j]=6(){H h[j].1p(h,14)}})();d.28==N?1P.1X(e.13.1x.1X+(e.13.1x.4g+a)):h.2J.U({1I:d.28.17,2D:6(j){O(K l=j.17,m=[],s=d.2J,o=j.P+j.18.L,F=d.28,q,G=0;G<s.L;G++){q=y(l,s[G]);b(q,o);m=m.1O(q)}I(F.18!=N&&j.18!=N){q=y(j.18,F.18);b(q,j.P);m=m.1O(q)}I(F.1b!=N&&j.1b!=N){q=y(j.1b,F.1b);b(q,j.P+j[0].5Q(j.1b));m=m.1O(q)}O(j=0;j<m.L;j++)m[j].1V=c.1V;H m}})}};e.4j=6(){};e.4j.Z={V:6(a,b){K c=J.1n[a];c=c==N?b:c;K d={"R":R,"11":11}[c];H d==N?c:d},3Y:6(a){H 1E.4i(a)},4c:6(a,b){K c=[];I(a!=N)O(K d=0;d<a.L;d++)I(1j a[d]=="2m")c=c.1O(y(b,a[d]));H J.4e(c.6b(D))},4e:6(a){O(K b=0;b<a.L;b++)I(a[b]!==N)O(K c=a[b],d=c.P+c.L,h=b+1;h<a.L&&a[b]!==N;h++){K g=a[h];I(g!==N)I(g.P>d)1N;Y I(g.P==c.P&&g.L>c.L)a[b]=N;Y I(g.P>=c.P&&g.P<d)a[h]=N}H a},4d:6(a){K b=[],c=2u(J.V("2i-1s"));v(a,6(d,h){b.U(h+c)});H b},3U:6(a){K b=J.V("1M",[]);I(1j b!="2m"&&b.U==N)b=[b];a:{a=a.1q();K c=3W 0;O(c=c=1Q.6c(c||0,0);c<b.L;c++)I(b[c]==a){b=c;1N a}b=-1}H b!=-1},2r:6(a,b,c){a=["1s","6i"+b,"P"+a,"6r"+(b%2==0?1:2).1q()];J.3U(b)&&a.U("67");b==0&&a.U("1N");H\'<T 1g="\'+a.1K(" ")+\'">\'+c+"</T>"},3Q:6(a,b){K c="",d=a.1e("\\n").L,h=2u(J.V("2i-1s")),g=J.V("2z-1s-2t");I(g==R)g=(h+d-1).1q().L;Y I(3R(g)==R)g=0;O(K i=0;i<d;i++){K k=b?b[i]:h+i,j;I(k==0)j=e.13.1W;Y{j=g;O(K l=k.1q();l.L<j;)l="0"+l;j=l}a=j;c+=J.2r(i,k,a)}H c},49:6(a,b){a=x(a);K c=a.1e("\\n");J.V("2z-1s-2t");K d=2u(J.V("2i-1s"));a="";O(K h=J.V("1D"),g=0;g<c.L;g++){K i=c[g],k=/^(&2s;|\\s)+/.X(i),j=N,l=b?b[g]:d+g;I(k!=N){j=k[0].1q();i=i.1o(j.L);j=j.Q(" ",e.13.1W)}i=x(i);I(i.L==0)i=e.13.1W;a+=J.2r(g,l,(j!=N?\'<17 1g="\'+h+\' 5N">\'+j+"</17>":"")+i)}H a},4f:6(a){H a?"<4a>"+a+"</4a>":""},4b:6(a,b){6 c(l){H(l=l?l.1V||g:g)?l+" ":""}O(K d=0,h="",g=J.V("1D",""),i=0;i<b.L;i++){K k=b[i],j;I(!(k===N||k.L===0)){j=c(k);h+=u(a.1o(d,k.P-d),j+"48")+u(k.1T,j+k.23);d=k.P+k.L+(k.75||0)}}h+=u(a.1o(d),c()+"48");H h},1H:6(a){K b="",c=["20"],d;I(J.V("2k")==R)J.1n.16=J.1n.1u=11;1l="20";J.V("2l")==R&&c.U("47");I((1u=J.V("1u"))==11)c.U("6S");c.U(J.V("1g-27"));c.U(J.V("1D"));a=a.Q(/^[ ]*[\\n]+|[\\n]*[ ]*$/g,"").Q(/\\r/g," ");b=J.V("43-22");I(J.V("42-45")==R)a=n(a,b);Y{O(K h="",g=0;g<b;g++)h+=" ";a=a.Q(/\\t/g,h)}a=a;a:{b=a=a;h=/<2R\\s*\\/?>|&1y;2R\\s*\\/?&1G;/2T;I(e.13.46==R)b=b.Q(h,"\\n");I(e.13.44==R)b=b.Q(h,"");b=b.1e("\\n");h=/^\\s*/;g=4Q;O(K i=0;i<b.L&&g>0;i++){K k=b[i];I(x(k).L!=0){k=h.X(k);I(k==N){a=a;1N a}g=1Q.4q(k[0].L,g)}}I(g>0)O(i=0;i<b.L;i++)b[i]=b[i].1o(g);a=b.1K("\\n")}I(1u)d=J.4d(a);b=J.4c(J.2J,a);b=J.4b(a,b);b=J.49(b,d);I(J.V("41-40"))b=E(b);1j 2H!="1d"&&2H.3S&&2H.3S.1C(/5s/)&&c.U("5t");H b=\'<T 1c="\'+t(J.1c)+\'" 1g="\'+c.1K(" ")+\'">\'+(J.V("16")?e.16.1H(J):"")+\'<3Z 5z="0" 5H="0" 5J="0">\'+J.4f(J.V("1t"))+"<3T><3P>"+(1u?\'<2d 1g="1u">\'+J.3Q(a)+"</2d>":"")+\'<2d 1g="17"><T 1g="3O">\'+b+"</T></2d></3P></3T></3Z></T>"},2F:6(a){I(a===N)a="";J.17=a;K b=J.3Y("T");b.3X=J.1H(a);J.V("16")&&w(p(b,".16"),"5c",e.16.2b);J.V("3V-17")&&w(p(b,".17"),"56",f);H b},2Q:6(a){J.1c=""+1Q.5d(1Q.5n()*5k).1q();e.1Y.2A[t(J.1c)]=J;J.1n=C(e.2v,a||{});I(J.V("2k")==R)J.1n.16=J.1n.1u=11},5j:6(a){a=a.Q(/^\\s+|\\s+$/g,"").Q(/\\s+/g,"|");H"\\\\b(?:"+a+")\\\\b"},5f:6(a){J.28={18:{1I:a.18,23:"1k"},1b:{1I:a.1b,23:"1k"},17:1f M("(?<18>"+a.18.1m+")(?<17>.*?)(?<1b>"+a.1b.1m+")","5o")}}};H e}();1j 2e!="1d"&&(2e.1v=1v);',62,441,'||||||function|||||||||||||||||||||||||||||||||||||return|if|this|var|length|XRegExp|null|for|index|replace|true||div|push|getParam|call|exec|else|prototype||false|lastIndex|config|arguments|RegExp|toolbar|code|left|captureNames|slice|right|id|undefined|split|new|class|addToken|indexOf|typeof|script|className|source|params|substr|apply|toString|String|line|title|gutter|SyntaxHighlighter|_xregexp|strings|lt|html|test|OUTSIDE_CLASS|match|brush|document|target|gt|getHtml|regex|global|join|style|highlight|break|concat|window|Math|isRegExp|throw|value|brushes|brushName|space|alert|vars|http|syntaxhighlighter|expandSource|size|css|case|font|Fa|name|htmlScript|dA|can|handler|gm|td|exports|color|in|href|first|discoveredBrushes|light|collapse|object|cache|getButtonHtml|trigger|pattern|getLineHtml|nbsp|numbers|parseInt|defaults|com|items|www|pad|highlighters|execute|focus|func|all|getDiv|parentNode|navigator|INSIDE_CLASS|regexList|hasFlag|Match|useScriptTags|hasNamedCapture|text|help|init|br|input|gi|Error|values|span|list|250|height|width|screen|top|500|tagName|findElements|getElementsByTagName|aboutDialog|_blank|appendChild|charAt|Array|copyAsGlobal|setFlag|highlighter_|string|attachEvent|nodeName|floor|backref|output|the|TypeError|sticky|Za|iterate|freezeTokens|scope|type|textarea|alexgorbatchev|version|margin|2010|005896|gs|regexLib|body|center|align|noBrush|require|childNodes|DTD|xhtml1|head|org|w3|url|preventDefault|container|tr|getLineNumbersHtml|isNaN|userAgent|tbody|isLineHighlighted|quick|void|innerHTML|create|table|links|auto|smart|tab|stripBrs|tabs|bloggerMode|collapsed|plain|getCodeLinesHtml|caption|getMatchesHtml|findMatches|figureOutLineNumbers|removeNestedMatches|getTitleHtml|brushNotHtmlScript|substring|createElement|Highlighter|load|HtmlScript|Brush|pre|expand|multiline|min|Can|ignoreCase|find|blur|extended|toLowerCase|aliases|addEventListener|innerText|textContent|wasn|select|createTextNode|removeChild|option|same|frame|xmlns|dtd|twice|1999|equiv|meta|htmlscript|transitional|1E3|expected|PUBLIC|DOCTYPE|on|W3C|XHTML|TR|EN|Transitional||configured|srcElement|Object|after|run|dblclick|matchChain|valueOf|constructor|default|switch|click|round|execAt|forHtmlScript|token|gimy|functions|getKeywords|1E6|escape|within|random|sgi|another|finally|supply|MSIE|ie|toUpperCase|catch|returnValue|definition|event|border|imsx|constructing|one|Infinity|from|when|Content|cellpadding|flags|cellspacing|try|xhtml|Type|spaces|2930402|hosted_button_id|lastIndexOf|donate|active|development|keep|to|xclick|_s|Xml|please|like|you|paypal|cgi|cmd|webscr|bin|highlighted|scrollbars|aspScriptTags|phpScriptTags|sort|max|scriptScriptTags|toolbar_item|_|command|command_|number|getElementById|doubleQuotedString|singleLinePerlComments|singleLineCComments|multiLineCComments|singleQuotedString|multiLineDoubleQuotedString|xmlComments|alt|multiLineSingleQuotedString|If|https|1em|000|fff|background|5em|xx|bottom|75em|Gorbatchev|large|serif|CDATA|continue|utf|charset|content|About|family|sans|Helvetica|Arial|Geneva|3em|nogutter|Copyright|syntax|close|write|2004|Alex|open|JavaScript|highlighter|July|02|replaceChild|offset|83'.split('|'),0,{}))
+
 
 /***/ },
 /* 117 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<aside class=\"sidebar\">\n        <ul>\n            <li>\n                <a class=\"sidebar-tree\" v-link=\"{ name : 'Directives' }\">1.指令</a>\n                <ul class=\"sidebar-ul\">\n                    <li>\n                        <a v-link=\"\">1.简单事例</a>\n                    </li>\n                </ul>\n            </li>\n            <li>\n                <a>2.过滤器</a>\n            </li>\n            <li>\n                <a>3.渲染列表</a>\n            </li>\n            <li>\n                <a>4.事件监听</a>\n            </li>\n            <li>\n                <a>5.处理表单</a>\n            </li>\n            <li>\n                <a>6.计算属性</a>\n            </li>\n            <li>\n                <a>7.自定义指令</a>\n            </li>\n            <li>\n                <a>8.自定义过滤器</a>\n            </li>\n            <li>\n                <a>9.组件系统</a>\n            </li>\n            <li>\n                <a>10.过渡效果</a>\n            </li>\n        </ul>\n    </aside>\n    <section>\n        <router-view></router-view>\n    </section>";
+	/**
+	 * SyntaxHighlighter
+	 * http://alexgorbatchev.com/SyntaxHighlighter
+	 *
+	 * SyntaxHighlighter is donationware. If you are using it, please donate.
+	 * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+	 *
+	 * @version
+	 * 3.0.83 (July 02 2010)
+	 * 
+	 * @copyright
+	 * Copyright (C) 2004-2010 Alex Gorbatchev.
+	 *
+	 * @license
+	 * Dual licensed under the MIT and GPL licenses.
+	 */
+	;(function()
+	{
+		// CommonJS
+		 true ? SyntaxHighlighter = __webpack_require__(116).SyntaxHighlighter : null;
+
+		function Brush()
+		{
+			var keywords =	'break case catch continue ' +
+							'default delete do else false  ' +
+							'for function if in instanceof ' +
+							'new null return super switch ' +
+							'this throw true try typeof var while with'
+							;
+
+			var r = SyntaxHighlighter.regexLib;
+			
+			this.regexList = [
+				{ regex: r.multiLineDoubleQuotedString,					css: 'string' },			// double quoted strings
+				{ regex: r.multiLineSingleQuotedString,					css: 'string' },			// single quoted strings
+				{ regex: r.singleLineCComments,							css: 'comments' },			// one line comments
+				{ regex: r.multiLineCComments,							css: 'comments' },			// multiline comments
+				{ regex: /\s*#.*/gm,									css: 'preprocessor' },		// preprocessor tags like #region and #endregion
+				{ regex: new RegExp(this.getKeywords(keywords), 'gm'),	css: 'keyword' }			// keywords
+				];
+		
+			this.forHtmlScript(r.scriptScriptTags);
+		};
+
+		Brush.prototype	= new SyntaxHighlighter.Highlighter();
+		Brush.aliases	= ['js', 'jscript', 'javascript'];
+
+		SyntaxHighlighter.brushes.JScript = Brush;
+
+		// CommonJS
+		 true ? exports.Brush = Brush : null;
+	})();
+
 
 /***/ },
 /* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports.template = __webpack_require__(119)
+	/*!
+	 * XRegExp 3.0.0
+	 * <http://xregexp.com/>
+	 * Steven Levithan (c) 2007-2015 MIT License
+	 */
+
+	/**
+	 * XRegExp provides augmented, extensible regular expressions. You get additional regex syntax and
+	 * flags, beyond what browsers support natively. XRegExp is also a regex utility belt with tools to
+	 * make your client-side grepping simpler and more powerful, while freeing you from related
+	 * cross-browser inconsistencies.
+	 */
+	var XRegExp = (function(undefined) {
+	    'use strict';
+
+	/* ==============================
+	 * Private variables
+	 * ============================== */
+
+	    var // Internal reference to the `XRegExp` object
+	        self,
+	        // Property name used for extended regex instance data
+	        REGEX_DATA = 'xregexp',
+	        // Optional features that can be installed and uninstalled
+	        features = {
+	            astral: false,
+	            natives: false
+	        },
+	        // Native methods to use and restore ('native' is an ES3 reserved keyword)
+	        nativ = {
+	            exec: RegExp.prototype.exec,
+	            test: RegExp.prototype.test,
+	            match: String.prototype.match,
+	            replace: String.prototype.replace,
+	            split: String.prototype.split
+	        },
+	        // Storage for fixed/extended native methods
+	        fixed = {},
+	        // Storage for regexes cached by `XRegExp.cache`
+	        regexCache = {},
+	        // Storage for pattern details cached by the `XRegExp` constructor
+	        patternCache = {},
+	        // Storage for regex syntax tokens added internally or by `XRegExp.addToken`
+	        tokens = [],
+	        // Token scopes
+	        defaultScope = 'default',
+	        classScope = 'class',
+	        // Regexes that match native regex syntax, including octals
+	        nativeTokens = {
+	            // Any native multicharacter token in default scope, or any single character
+	            'default': /\\(?:0(?:[0-3][0-7]{0,2}|[4-7][0-7]?)?|[1-9]\d*|x[\dA-Fa-f]{2}|u(?:[\dA-Fa-f]{4}|{[\dA-Fa-f]+})|c[A-Za-z]|[\s\S])|\(\?[:=!]|[?*+]\?|{\d+(?:,\d*)?}\??|[\s\S]/,
+	            // Any native multicharacter token in character class scope, or any single character
+	            'class': /\\(?:[0-3][0-7]{0,2}|[4-7][0-7]?|x[\dA-Fa-f]{2}|u(?:[\dA-Fa-f]{4}|{[\dA-Fa-f]+})|c[A-Za-z]|[\s\S])|[\s\S]/
+	        },
+	        // Any backreference or dollar-prefixed character in replacement strings
+	        replacementToken = /\$(?:{([\w$]+)}|(\d\d?|[\s\S]))/g,
+	        // Check for correct `exec` handling of nonparticipating capturing groups
+	        correctExecNpcg = nativ.exec.call(/()??/, '')[1] === undefined,
+	        // Check for ES6 `u` flag support
+	        hasNativeU = (function() {
+	            var isSupported = true;
+	            try {
+	                new RegExp('', 'u');
+	            } catch (exception) {
+	                isSupported = false;
+	            }
+	            return isSupported;
+	        }()),
+	        // Check for ES6 `y` flag support
+	        hasNativeY = (function() {
+	            var isSupported = true;
+	            try {
+	                new RegExp('', 'y');
+	            } catch (exception) {
+	                isSupported = false;
+	            }
+	            return isSupported;
+	        }()),
+	        // Check for ES6 `flags` prop support
+	        hasFlagsProp = /a/.flags !== undefined,
+	        // Tracker for known flags, including addon flags
+	        registeredFlags = {
+	            g: true,
+	            i: true,
+	            m: true,
+	            u: hasNativeU,
+	            y: hasNativeY
+	        },
+	        // Shortcut to `Object.prototype.toString`
+	        toString = {}.toString,
+	        // Shortcut to `XRegExp.addToken`
+	        add;
+
+	/* ==============================
+	 * Private functions
+	 * ============================== */
+
+	/**
+	 * Attaches extended data and `XRegExp.prototype` properties to a regex object.
+	 *
+	 * @private
+	 * @param {RegExp} regex Regex to augment.
+	 * @param {Array} captureNames Array with capture names, or `null`.
+	 * @param {String} xSource XRegExp pattern used to generate `regex`, or `null` if N/A.
+	 * @param {String} xFlags XRegExp flags used to generate `regex`, or `null` if N/A.
+	 * @param {Boolean} [isInternalOnly=false] Whether the regex will be used only for internal
+	 *   operations, and never exposed to users. For internal-only regexes, we can improve perf by
+	 *   skipping some operations like attaching `XRegExp.prototype` properties.
+	 * @returns {RegExp} Augmented regex.
+	 */
+	    function augment(regex, captureNames, xSource, xFlags, isInternalOnly) {
+	        var p;
+
+	        regex[REGEX_DATA] = {
+	            captureNames: captureNames
+	        };
+
+	        if (isInternalOnly) {
+	            return regex;
+	        }
+
+	        // Can't auto-inherit these since the XRegExp constructor returns a nonprimitive value
+	        if (regex.__proto__) {
+	            regex.__proto__ = self.prototype;
+	        } else {
+	            for (p in self.prototype) {
+	                // A `self.prototype.hasOwnProperty(p)` check wouldn't be worth it here, since this
+	                // is performance sensitive, and enumerable `Object.prototype` or `RegExp.prototype`
+	                // extensions exist on `regex.prototype` anyway
+	                regex[p] = self.prototype[p];
+	            }
+	        }
+
+	        regex[REGEX_DATA].source = xSource;
+	        // Emulate the ES6 `flags` prop by ensuring flags are in alphabetical order
+	        regex[REGEX_DATA].flags = xFlags ? xFlags.split('').sort().join('') : xFlags;
+
+	        return regex;
+	    }
+
+	/**
+	 * Removes any duplicate characters from the provided string.
+	 *
+	 * @private
+	 * @param {String} str String to remove duplicate characters from.
+	 * @returns {String} String with any duplicate characters removed.
+	 */
+	    function clipDuplicates(str) {
+	        return nativ.replace.call(str, /([\s\S])(?=[\s\S]*\1)/g, '');
+	    }
+
+	/**
+	 * Copies a regex object while preserving extended data and augmenting with `XRegExp.prototype`
+	 * properties. The copy has a fresh `lastIndex` property (set to zero). Allows adding and removing
+	 * flags g and y while copying the regex.
+	 *
+	 * @private
+	 * @param {RegExp} regex Regex to copy.
+	 * @param {Object} [options] Options object with optional properties:
+	 *   <li>`addG` {Boolean} Add flag g while copying the regex.
+	 *   <li>`addY` {Boolean} Add flag y while copying the regex.
+	 *   <li>`removeG` {Boolean} Remove flag g while copying the regex.
+	 *   <li>`removeY` {Boolean} Remove flag y while copying the regex.
+	 *   <li>`isInternalOnly` {Boolean} Whether the copied regex will be used only for internal
+	 *     operations, and never exposed to users. For internal-only regexes, we can improve perf by
+	 *     skipping some operations like attaching `XRegExp.prototype` properties.
+	 * @returns {RegExp} Copy of the provided regex, possibly with modified flags.
+	 */
+	    function copyRegex(regex, options) {
+	        if (!self.isRegExp(regex)) {
+	            throw new TypeError('Type RegExp expected');
+	        }
+
+	        var xData = regex[REGEX_DATA] || {},
+	            flags = getNativeFlags(regex),
+	            flagsToAdd = '',
+	            flagsToRemove = '',
+	            xregexpSource = null,
+	            xregexpFlags = null;
+
+	        options = options || {};
+
+	        if (options.removeG) {flagsToRemove += 'g';}
+	        if (options.removeY) {flagsToRemove += 'y';}
+	        if (flagsToRemove) {
+	            flags = nativ.replace.call(flags, new RegExp('[' + flagsToRemove + ']+', 'g'), '');
+	        }
+
+	        if (options.addG) {flagsToAdd += 'g';}
+	        if (options.addY) {flagsToAdd += 'y';}
+	        if (flagsToAdd) {
+	            flags = clipDuplicates(flags + flagsToAdd);
+	        }
+
+	        if (!options.isInternalOnly) {
+	            if (xData.source !== undefined) {
+	                xregexpSource = xData.source;
+	            }
+	            // null or undefined; don't want to add to `flags` if the previous value was null, since
+	            // that indicates we're not tracking original precompilation flags
+	            if (xData.flags != null) {
+	                // Flags are only added for non-internal regexes by `XRegExp.globalize`. Flags are
+	                // never removed for non-internal regexes, so don't need to handle it
+	                xregexpFlags = flagsToAdd ? clipDuplicates(xData.flags + flagsToAdd) : xData.flags;
+	            }
+	        }
+
+	        // Augment with `XRegExp.prototype` properties, but use the native `RegExp` constructor to
+	        // avoid searching for special tokens. That would be wrong for regexes constructed by
+	        // `RegExp`, and unnecessary for regexes constructed by `XRegExp` because the regex has
+	        // already undergone the translation to native regex syntax
+	        regex = augment(
+	            new RegExp(regex.source, flags),
+	            hasNamedCapture(regex) ? xData.captureNames.slice(0) : null,
+	            xregexpSource,
+	            xregexpFlags,
+	            options.isInternalOnly
+	        );
+
+	        return regex;
+	    }
+
+	/**
+	 * Converts hexadecimal to decimal.
+	 *
+	 * @private
+	 * @param {String} hex
+	 * @returns {Number}
+	 */
+	    function dec(hex) {
+	        return parseInt(hex, 16);
+	    }
+
+	/**
+	 * Returns native `RegExp` flags used by a regex object.
+	 *
+	 * @private
+	 * @param {RegExp} regex Regex to check.
+	 * @returns {String} Native flags in use.
+	 */
+	    function getNativeFlags(regex) {
+	        return hasFlagsProp ?
+	            regex.flags :
+	            // Explicitly using `RegExp.prototype.toString` (rather than e.g. `String` or
+	            // concatenation with an empty string) allows this to continue working predictably when
+	            // `XRegExp.proptotype.toString` is overriden
+	            nativ.exec.call(/\/([a-z]*)$/i, RegExp.prototype.toString.call(regex))[1];
+	    }
+
+	/**
+	 * Determines whether a regex has extended instance data used to track capture names.
+	 *
+	 * @private
+	 * @param {RegExp} regex Regex to check.
+	 * @returns {Boolean} Whether the regex uses named capture.
+	 */
+	    function hasNamedCapture(regex) {
+	        return !!(regex[REGEX_DATA] && regex[REGEX_DATA].captureNames);
+	    }
+
+	/**
+	 * Converts decimal to hexadecimal.
+	 *
+	 * @private
+	 * @param {Number|String} dec
+	 * @returns {String}
+	 */
+	    function hex(dec) {
+	        return parseInt(dec, 10).toString(16);
+	    }
+
+	/**
+	 * Returns the first index at which a given value can be found in an array.
+	 *
+	 * @private
+	 * @param {Array} array Array to search.
+	 * @param {*} value Value to locate in the array.
+	 * @returns {Number} Zero-based index at which the item is found, or -1.
+	 */
+	    function indexOf(array, value) {
+	        var len = array.length, i;
+
+	        for (i = 0; i < len; ++i) {
+	            if (array[i] === value) {
+	                return i;
+	            }
+	        }
+
+	        return -1;
+	    }
+
+	/**
+	 * Determines whether a value is of the specified type, by resolving its internal [[Class]].
+	 *
+	 * @private
+	 * @param {*} value Object to check.
+	 * @param {String} type Type to check for, in TitleCase.
+	 * @returns {Boolean} Whether the object matches the type.
+	 */
+	    function isType(value, type) {
+	        return toString.call(value) === '[object ' + type + ']';
+	    }
+
+	/**
+	 * Checks whether the next nonignorable token after the specified position is a quantifier.
+	 *
+	 * @private
+	 * @param {String} pattern Pattern to search within.
+	 * @param {Number} pos Index in `pattern` to search at.
+	 * @param {String} flags Flags used by the pattern.
+	 * @returns {Boolean} Whether the next token is a quantifier.
+	 */
+	    function isQuantifierNext(pattern, pos, flags) {
+	        return nativ.test.call(
+	            flags.indexOf('x') > -1 ?
+	                // Ignore any leading whitespace, line comments, and inline comments
+	                /^(?:\s+|#.*|\(\?#[^)]*\))*(?:[?*+]|{\d+(?:,\d*)?})/ :
+	                // Ignore any leading inline comments
+	                /^(?:\(\?#[^)]*\))*(?:[?*+]|{\d+(?:,\d*)?})/,
+	            pattern.slice(pos)
+	        );
+	    }
+
+	/**
+	 * Pads the provided string with as many leading zeros as needed to get to length 4. Used to produce
+	 * fixed-length hexadecimal values.
+	 *
+	 * @private
+	 * @param {String} str
+	 * @returns {String}
+	 */
+	    function pad4(str) {
+	        while (str.length < 4) {
+	            str = '0' + str;
+	        }
+	        return str;
+	    }
+
+	/**
+	 * Checks for flag-related errors, and strips/applies flags in a leading mode modifier. Offloads
+	 * the flag preparation logic from the `XRegExp` constructor.
+	 *
+	 * @private
+	 * @param {String} pattern Regex pattern, possibly with a leading mode modifier.
+	 * @param {String} flags Any combination of flags.
+	 * @returns {Object} Object with properties `pattern` and `flags`.
+	 */
+	    function prepareFlags(pattern, flags) {
+	        var i;
+
+	        // Recent browsers throw on duplicate flags, so copy this behavior for nonnative flags
+	        if (clipDuplicates(flags) !== flags) {
+	            throw new SyntaxError('Invalid duplicate regex flag ' + flags);
+	        }
+
+	        // Strip and apply a leading mode modifier with any combination of flags except g or y
+	        pattern = nativ.replace.call(pattern, /^\(\?([\w$]+)\)/, function($0, $1) {
+	            if (nativ.test.call(/[gy]/, $1)) {
+	                throw new SyntaxError('Cannot use flag g or y in mode modifier ' + $0);
+	            }
+	            // Allow duplicate flags within the mode modifier
+	            flags = clipDuplicates(flags + $1);
+	            return '';
+	        });
+
+	        // Throw on unknown native or nonnative flags
+	        for (i = 0; i < flags.length; ++i) {
+	            if (!registeredFlags[flags.charAt(i)]) {
+	                throw new SyntaxError('Unknown regex flag ' + flags.charAt(i));
+	            }
+	        }
+
+	        return {
+	            pattern: pattern,
+	            flags: flags
+	        };
+	    }
+
+	/**
+	 * Prepares an options object from the given value.
+	 *
+	 * @private
+	 * @param {String|Object} value Value to convert to an options object.
+	 * @returns {Object} Options object.
+	 */
+	    function prepareOptions(value) {
+	        var options = {};
+
+	        if (isType(value, 'String')) {
+	            self.forEach(value, /[^\s,]+/, function(match) {
+	                options[match] = true;
+	            });
+
+	            return options;
+	        }
+
+	        return value;
+	    }
+
+	/**
+	 * Registers a flag so it doesn't throw an 'unknown flag' error.
+	 *
+	 * @private
+	 * @param {String} flag Single-character flag to register.
+	 */
+	    function registerFlag(flag) {
+	        if (!/^[\w$]$/.test(flag)) {
+	            throw new Error('Flag must be a single character A-Za-z0-9_$');
+	        }
+
+	        registeredFlags[flag] = true;
+	    }
+
+	/**
+	 * Runs built-in and custom regex syntax tokens in reverse insertion order at the specified
+	 * position, until a match is found.
+	 *
+	 * @private
+	 * @param {String} pattern Original pattern from which an XRegExp object is being built.
+	 * @param {String} flags Flags being used to construct the regex.
+	 * @param {Number} pos Position to search for tokens within `pattern`.
+	 * @param {Number} scope Regex scope to apply: 'default' or 'class'.
+	 * @param {Object} context Context object to use for token handler functions.
+	 * @returns {Object} Object with properties `matchLength`, `output`, and `reparse`; or `null`.
+	 */
+	    function runTokens(pattern, flags, pos, scope, context) {
+	        var i = tokens.length,
+	            leadChar = pattern.charAt(pos),
+	            result = null,
+	            match,
+	            t;
+
+	        // Run in reverse insertion order
+	        while (i--) {
+	            t = tokens[i];
+	            if (
+	                (t.leadChar && t.leadChar !== leadChar) ||
+	                (t.scope !== scope && t.scope !== 'all') ||
+	                (t.flag && flags.indexOf(t.flag) === -1)
+	            ) {
+	                continue;
+	            }
+
+	            match = self.exec(pattern, t.regex, pos, 'sticky');
+	            if (match) {
+	                result = {
+	                    matchLength: match[0].length,
+	                    output: t.handler.call(context, match, scope, flags),
+	                    reparse: t.reparse
+	                };
+	                // Finished with token tests
+	                break;
+	            }
+	        }
+
+	        return result;
+	    }
+
+	/**
+	 * Enables or disables implicit astral mode opt-in. When enabled, flag A is automatically added to
+	 * all new regexes created by XRegExp. This causes an error to be thrown when creating regexes if
+	 * the Unicode Base addon is not available, since flag A is registered by that addon.
+	 *
+	 * @private
+	 * @param {Boolean} on `true` to enable; `false` to disable.
+	 */
+	    function setAstral(on) {
+	        features.astral = on;
+	    }
+
+	/**
+	 * Enables or disables native method overrides.
+	 *
+	 * @private
+	 * @param {Boolean} on `true` to enable; `false` to disable.
+	 */
+	    function setNatives(on) {
+	        RegExp.prototype.exec = (on ? fixed : nativ).exec;
+	        RegExp.prototype.test = (on ? fixed : nativ).test;
+	        String.prototype.match = (on ? fixed : nativ).match;
+	        String.prototype.replace = (on ? fixed : nativ).replace;
+	        String.prototype.split = (on ? fixed : nativ).split;
+
+	        features.natives = on;
+	    }
+
+	/**
+	 * Returns the object, or throws an error if it is `null` or `undefined`. This is used to follow
+	 * the ES5 abstract operation `ToObject`.
+	 *
+	 * @private
+	 * @param {*} value Object to check and return.
+	 * @returns {*} The provided object.
+	 */
+	    function toObject(value) {
+	        // null or undefined
+	        if (value == null) {
+	            throw new TypeError('Cannot convert null or undefined to object');
+	        }
+
+	        return value;
+	    }
+
+	/* ==============================
+	 * Constructor
+	 * ============================== */
+
+	/**
+	 * Creates an extended regular expression object for matching text with a pattern. Differs from a
+	 * native regular expression in that additional syntax and flags are supported. The returned object
+	 * is in fact a native `RegExp` and works with all native methods.
+	 *
+	 * @class XRegExp
+	 * @constructor
+	 * @param {String|RegExp} pattern Regex pattern string, or an existing regex object to copy.
+	 * @param {String} [flags] Any combination of flags.
+	 *   Native flags:
+	 *     <li>`g` - global
+	 *     <li>`i` - ignore case
+	 *     <li>`m` - multiline anchors
+	 *     <li>`u` - unicode (ES6)
+	 *     <li>`y` - sticky (Firefox 3+, ES6)
+	 *   Additional XRegExp flags:
+	 *     <li>`n` - explicit capture
+	 *     <li>`s` - dot matches all (aka singleline)
+	 *     <li>`x` - free-spacing and line comments (aka extended)
+	 *     <li>`A` - astral (requires the Unicode Base addon)
+	 *   Flags cannot be provided when constructing one `RegExp` from another.
+	 * @returns {RegExp} Extended regular expression object.
+	 * @example
+	 *
+	 * // With named capture and flag x
+	 * XRegExp('(?<year>  [0-9]{4} ) -?  # year  \n\
+	 *          (?<month> [0-9]{2} ) -?  # month \n\
+	 *          (?<day>   [0-9]{2} )     # day   ', 'x');
+	 *
+	 * // Providing a regex object copies it. Native regexes are recompiled using native (not XRegExp)
+	 * // syntax. Copies maintain extended data, are augmented with `XRegExp.prototype` properties, and
+	 * // have fresh `lastIndex` properties (set to zero).
+	 * XRegExp(/regex/);
+	 */
+	    self = function(pattern, flags) {
+	        var context = {
+	                hasNamedCapture: false,
+	                captureNames: []
+	            },
+	            scope = defaultScope,
+	            output = '',
+	            pos = 0,
+	            result,
+	            token,
+	            generated,
+	            appliedPattern,
+	            appliedFlags;
+
+	        if (self.isRegExp(pattern)) {
+	            if (flags !== undefined) {
+	                throw new TypeError('Cannot supply flags when copying a RegExp');
+	            }
+	            return copyRegex(pattern);
+	        }
+
+	        // Copy the argument behavior of `RegExp`
+	        pattern = pattern === undefined ? '' : String(pattern);
+	        flags = flags === undefined ? '' : String(flags);
+
+	        if (self.isInstalled('astral') && flags.indexOf('A') === -1) {
+	            // This causes an error to be thrown if the Unicode Base addon is not available
+	            flags += 'A';
+	        }
+
+	        if (!patternCache[pattern]) {
+	            patternCache[pattern] = {};
+	        }
+
+	        if (!patternCache[pattern][flags]) {
+	            // Check for flag-related errors, and strip/apply flags in a leading mode modifier
+	            result = prepareFlags(pattern, flags);
+	            appliedPattern = result.pattern;
+	            appliedFlags = result.flags;
+
+	            // Use XRegExp's tokens to translate the pattern to a native regex pattern.
+	            // `appliedPattern.length` may change on each iteration if tokens use `reparse`
+	            while (pos < appliedPattern.length) {
+	                do {
+	                    // Check for custom tokens at the current position
+	                    result = runTokens(appliedPattern, appliedFlags, pos, scope, context);
+	                    // If the matched token used the `reparse` option, splice its output into the
+	                    // pattern before running tokens again at the same position
+	                    if (result && result.reparse) {
+	                        appliedPattern = appliedPattern.slice(0, pos) +
+	                            result.output +
+	                            appliedPattern.slice(pos + result.matchLength);
+	                    }
+	                } while (result && result.reparse);
+
+	                if (result) {
+	                    output += result.output;
+	                    pos += (result.matchLength || 1);
+	                } else {
+	                    // Get the native token at the current position
+	                    token = self.exec(appliedPattern, nativeTokens[scope], pos, 'sticky')[0];
+	                    output += token;
+	                    pos += token.length;
+	                    if (token === '[' && scope === defaultScope) {
+	                        scope = classScope;
+	                    } else if (token === ']' && scope === classScope) {
+	                        scope = defaultScope;
+	                    }
+	                }
+	            }
+
+	            patternCache[pattern][flags] = {
+	                // Cleanup token cruft: repeated `(?:)(?:)` and leading/trailing `(?:)`
+	                pattern: nativ.replace.call(output, /\(\?:\)(?=\(\?:\))|^\(\?:\)|\(\?:\)$/g, ''),
+	                // Strip all but native flags
+	                flags: nativ.replace.call(appliedFlags, /[^gimuy]+/g, ''),
+	                // `context.captureNames` has an item for each capturing group, even if unnamed
+	                captures: context.hasNamedCapture ? context.captureNames : null
+	            };
+	        }
+
+	        generated = patternCache[pattern][flags];
+	        return augment(
+	            new RegExp(generated.pattern, generated.flags),
+	            generated.captures,
+	            pattern,
+	            flags
+	        );
+	    };
+
+	// Add `RegExp.prototype` to the prototype chain
+	    self.prototype = new RegExp();
+
+	/* ==============================
+	 * Public properties
+	 * ============================== */
+
+	/**
+	 * The XRegExp version number.
+	 *
+	 * @static
+	 * @memberOf XRegExp
+	 * @type String
+	 */
+	    self.version = '3.0.0';
+
+	/* ==============================
+	 * Public methods
+	 * ============================== */
+
+	/**
+	 * Extends XRegExp syntax and allows custom flags. This is used internally and can be used to
+	 * create XRegExp addons. If more than one token can match the same string, the last added wins.
+	 *
+	 * @memberOf XRegExp
+	 * @param {RegExp} regex Regex object that matches the new token.
+	 * @param {Function} handler Function that returns a new pattern string (using native regex syntax)
+	 *   to replace the matched token within all future XRegExp regexes. Has access to persistent
+	 *   properties of the regex being built, through `this`. Invoked with three arguments:
+	 *   <li>The match array, with named backreference properties.
+	 *   <li>The regex scope where the match was found: 'default' or 'class'.
+	 *   <li>The flags used by the regex, including any flags in a leading mode modifier.
+	 *   The handler function becomes part of the XRegExp construction process, so be careful not to
+	 *   construct XRegExps within the function or you will trigger infinite recursion.
+	 * @param {Object} [options] Options object with optional properties:
+	 *   <li>`scope` {String} Scope where the token applies: 'default', 'class', or 'all'.
+	 *   <li>`flag` {String} Single-character flag that triggers the token. This also registers the
+	 *     flag, which prevents XRegExp from throwing an 'unknown flag' error when the flag is used.
+	 *   <li>`optionalFlags` {String} Any custom flags checked for within the token `handler` that are
+	 *     not required to trigger the token. This registers the flags, to prevent XRegExp from
+	 *     throwing an 'unknown flag' error when any of the flags are used.
+	 *   <li>`reparse` {Boolean} Whether the `handler` function's output should not be treated as
+	 *     final, and instead be reparseable by other tokens (including the current token). Allows
+	 *     token chaining or deferring.
+	 *   <li>`leadChar` {String} Single character that occurs at the beginning of any successful match
+	 *     of the token (not always applicable). This doesn't change the behavior of the token unless
+	 *     you provide an erroneous value. However, providing it can increase the token's performance.
+	 * @example
+	 *
+	 * // Basic usage: Add \a for the ALERT control code
+	 * XRegExp.addToken(
+	 *   /\\a/,
+	 *   function() {return '\\x07';},
+	 *   {scope: 'all'}
+	 * );
+	 * XRegExp('\\a[\\a-\\n]+').test('\x07\n\x07'); // -> true
+	 *
+	 * // Add the U (ungreedy) flag from PCRE and RE2, which reverses greedy and lazy quantifiers
+	 * XRegExp.addToken(
+	 *   /([?*+]|{\d+(?:,\d*)?})(\??)/,
+	 *   function(match) {return match[1] + (match[2] ? '' : '?');},
+	 *   {flag: 'U'}
+	 * );
+	 * XRegExp('a+', 'U').exec('aaa')[0]; // -> 'a'
+	 * XRegExp('a+?', 'U').exec('aaa')[0]; // -> 'aaa'
+	 */
+	    self.addToken = function(regex, handler, options) {
+	        options = options || {};
+	        var optionalFlags = options.optionalFlags, i;
+
+	        if (options.flag) {
+	            registerFlag(options.flag);
+	        }
+
+	        if (optionalFlags) {
+	            optionalFlags = nativ.split.call(optionalFlags, '');
+	            for (i = 0; i < optionalFlags.length; ++i) {
+	                registerFlag(optionalFlags[i]);
+	            }
+	        }
+
+	        // Add to the private list of syntax tokens
+	        tokens.push({
+	            regex: copyRegex(regex, {
+	                addG: true,
+	                addY: hasNativeY,
+	                isInternalOnly: true
+	            }),
+	            handler: handler,
+	            scope: options.scope || defaultScope,
+	            flag: options.flag,
+	            reparse: options.reparse,
+	            leadChar: options.leadChar
+	        });
+
+	        // Reset the pattern cache used by the `XRegExp` constructor, since the same pattern and
+	        // flags might now produce different results
+	        self.cache.flush('patterns');
+	    };
+
+	/**
+	 * Caches and returns the result of calling `XRegExp(pattern, flags)`. On any subsequent call with
+	 * the same pattern and flag combination, the cached copy of the regex is returned.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} pattern Regex pattern string.
+	 * @param {String} [flags] Any combination of XRegExp flags.
+	 * @returns {RegExp} Cached XRegExp object.
+	 * @example
+	 *
+	 * while (match = XRegExp.cache('.', 'gs').exec(str)) {
+	 *   // The regex is compiled once only
+	 * }
+	 */
+	    self.cache = function(pattern, flags) {
+	        if (!regexCache[pattern]) {
+	            regexCache[pattern] = {};
+	        }
+	        return regexCache[pattern][flags] || (
+	            regexCache[pattern][flags] = self(pattern, flags)
+	        );
+	    };
+
+	// Intentionally undocumented
+	    self.cache.flush = function(cacheName) {
+	        if (cacheName === 'patterns') {
+	            // Flush the pattern cache used by the `XRegExp` constructor
+	            patternCache = {};
+	        } else {
+	            // Flush the regex cache populated by `XRegExp.cache`
+	            regexCache = {};
+	        }
+	    };
+
+	/**
+	 * Escapes any regular expression metacharacters, for use when matching literal strings. The result
+	 * can safely be used at any point within a regex that uses any flags.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to escape.
+	 * @returns {String} String with regex metacharacters escaped.
+	 * @example
+	 *
+	 * XRegExp.escape('Escaped? <.>');
+	 * // -> 'Escaped\?\ <\.>'
+	 */
+	    self.escape = function(str) {
+	        return nativ.replace.call(toObject(str), /[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+	    };
+
+	/**
+	 * Executes a regex search in a specified string. Returns a match array or `null`. If the provided
+	 * regex uses named capture, named backreference properties are included on the match array.
+	 * Optional `pos` and `sticky` arguments specify the search start position, and whether the match
+	 * must start at the specified position only. The `lastIndex` property of the provided regex is not
+	 * used, but is updated for compatibility. Also fixes browser bugs compared to the native
+	 * `RegExp.prototype.exec` and can be used reliably cross-browser.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {RegExp} regex Regex to search with.
+	 * @param {Number} [pos=0] Zero-based index at which to start the search.
+	 * @param {Boolean|String} [sticky=false] Whether the match must start at the specified position
+	 *   only. The string `'sticky'` is accepted as an alternative to `true`.
+	 * @returns {Array} Match array with named backreference properties, or `null`.
+	 * @example
+	 *
+	 * // Basic use, with named backreference
+	 * var match = XRegExp.exec('U+2620', XRegExp('U\\+(?<hex>[0-9A-F]{4})'));
+	 * match.hex; // -> '2620'
+	 *
+	 * // With pos and sticky, in a loop
+	 * var pos = 2, result = [], match;
+	 * while (match = XRegExp.exec('<1><2><3><4>5<6>', /<(\d)>/, pos, 'sticky')) {
+	 *   result.push(match[1]);
+	 *   pos = match.index + match[0].length;
+	 * }
+	 * // result -> ['2', '3', '4']
+	 */
+	    self.exec = function(str, regex, pos, sticky) {
+	        var cacheKey = 'g',
+	            addY = false,
+	            match,
+	            r2;
+
+	        addY = hasNativeY && !!(sticky || (regex.sticky && sticky !== false));
+	        if (addY) {
+	            cacheKey += 'y';
+	        }
+
+	        regex[REGEX_DATA] = regex[REGEX_DATA] || {};
+
+	        // Shares cached copies with `XRegExp.match`/`replace`
+	        r2 = regex[REGEX_DATA][cacheKey] || (
+	            regex[REGEX_DATA][cacheKey] = copyRegex(regex, {
+	                addG: true,
+	                addY: addY,
+	                removeY: sticky === false,
+	                isInternalOnly: true
+	            })
+	        );
+
+	        r2.lastIndex = pos = pos || 0;
+
+	        // Fixed `exec` required for `lastIndex` fix, named backreferences, etc.
+	        match = fixed.exec.call(r2, str);
+
+	        if (sticky && match && match.index !== pos) {
+	            match = null;
+	        }
+
+	        if (regex.global) {
+	            regex.lastIndex = match ? r2.lastIndex : 0;
+	        }
+
+	        return match;
+	    };
+
+	/**
+	 * Executes a provided function once per regex match.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {RegExp} regex Regex to search with.
+	 * @param {Function} callback Function to execute for each match. Invoked with four arguments:
+	 *   <li>The match array, with named backreference properties.
+	 *   <li>The zero-based match index.
+	 *   <li>The string being traversed.
+	 *   <li>The regex object being used to traverse the string.
+	 * @example
+	 *
+	 * // Extracts every other digit from a string
+	 * XRegExp.forEach('1a2345', /\d/, function(match, i) {
+	 *   if (i % 2) this.push(+match[0]);
+	 * }, []);
+	 * // -> [2, 4]
+	 */
+	    self.forEach = function(str, regex, callback) {
+	        var pos = 0,
+	            i = -1,
+	            match;
+
+	        while ((match = self.exec(str, regex, pos))) {
+	            // Because `regex` is provided to `callback`, the function could use the deprecated/
+	            // nonstandard `RegExp.prototype.compile` to mutate the regex. However, since
+	            // `XRegExp.exec` doesn't use `lastIndex` to set the search position, this can't lead
+	            // to an infinite loop, at least. Actually, because of the way `XRegExp.exec` caches
+	            // globalized versions of regexes, mutating the regex will not have any effect on the
+	            // iteration or matched strings, which is a nice side effect that brings extra safety
+	            callback(match, ++i, str, regex);
+
+	            pos = match.index + (match[0].length || 1);
+	        }
+	    };
+
+	/**
+	 * Copies a regex object and adds flag `g`. The copy maintains extended data, is augmented with
+	 * `XRegExp.prototype` properties, and has a fresh `lastIndex` property (set to zero). Native
+	 * regexes are not recompiled using XRegExp syntax.
+	 *
+	 * @memberOf XRegExp
+	 * @param {RegExp} regex Regex to globalize.
+	 * @returns {RegExp} Copy of the provided regex with flag `g` added.
+	 * @example
+	 *
+	 * var globalCopy = XRegExp.globalize(/regex/);
+	 * globalCopy.global; // -> true
+	 */
+	    self.globalize = function(regex) {
+	        return copyRegex(regex, {addG: true});
+	    };
+
+	/**
+	 * Installs optional features according to the specified options. Can be undone using
+	 * {@link #XRegExp.uninstall}.
+	 *
+	 * @memberOf XRegExp
+	 * @param {Object|String} options Options object or string.
+	 * @example
+	 *
+	 * // With an options object
+	 * XRegExp.install({
+	 *   // Enables support for astral code points in Unicode addons (implicitly sets flag A)
+	 *   astral: true,
+	 *
+	 *   // Overrides native regex methods with fixed/extended versions that support named
+	 *   // backreferences and fix numerous cross-browser bugs
+	 *   natives: true
+	 * });
+	 *
+	 * // With an options string
+	 * XRegExp.install('astral natives');
+	 */
+	    self.install = function(options) {
+	        options = prepareOptions(options);
+
+	        if (!features.astral && options.astral) {
+	            setAstral(true);
+	        }
+
+	        if (!features.natives && options.natives) {
+	            setNatives(true);
+	        }
+	    };
+
+	/**
+	 * Checks whether an individual optional feature is installed.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} feature Name of the feature to check. One of:
+	 *   <li>`natives`
+	 *   <li>`astral`
+	 * @returns {Boolean} Whether the feature is installed.
+	 * @example
+	 *
+	 * XRegExp.isInstalled('natives');
+	 */
+	    self.isInstalled = function(feature) {
+	        return !!(features[feature]);
+	    };
+
+	/**
+	 * Returns `true` if an object is a regex; `false` if it isn't. This works correctly for regexes
+	 * created in another frame, when `instanceof` and `constructor` checks would fail.
+	 *
+	 * @memberOf XRegExp
+	 * @param {*} value Object to check.
+	 * @returns {Boolean} Whether the object is a `RegExp` object.
+	 * @example
+	 *
+	 * XRegExp.isRegExp('string'); // -> false
+	 * XRegExp.isRegExp(/regex/i); // -> true
+	 * XRegExp.isRegExp(RegExp('^', 'm')); // -> true
+	 * XRegExp.isRegExp(XRegExp('(?s).')); // -> true
+	 */
+	    self.isRegExp = function(value) {
+	        return toString.call(value) === '[object RegExp]';
+	        //return isType(value, 'RegExp');
+	    };
+
+	/**
+	 * Returns the first matched string, or in global mode, an array containing all matched strings.
+	 * This is essentially a more convenient re-implementation of `String.prototype.match` that gives
+	 * the result types you actually want (string instead of `exec`-style array in match-first mode,
+	 * and an empty array instead of `null` when no matches are found in match-all mode). It also lets
+	 * you override flag g and ignore `lastIndex`, and fixes browser bugs.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {RegExp} regex Regex to search with.
+	 * @param {String} [scope='one'] Use 'one' to return the first match as a string. Use 'all' to
+	 *   return an array of all matched strings. If not explicitly specified and `regex` uses flag g,
+	 *   `scope` is 'all'.
+	 * @returns {String|Array} In match-first mode: First match as a string, or `null`. In match-all
+	 *   mode: Array of all matched strings, or an empty array.
+	 * @example
+	 *
+	 * // Match first
+	 * XRegExp.match('abc', /\w/); // -> 'a'
+	 * XRegExp.match('abc', /\w/g, 'one'); // -> 'a'
+	 * XRegExp.match('abc', /x/g, 'one'); // -> null
+	 *
+	 * // Match all
+	 * XRegExp.match('abc', /\w/g); // -> ['a', 'b', 'c']
+	 * XRegExp.match('abc', /\w/, 'all'); // -> ['a', 'b', 'c']
+	 * XRegExp.match('abc', /x/, 'all'); // -> []
+	 */
+	    self.match = function(str, regex, scope) {
+	        var global = (regex.global && scope !== 'one') || scope === 'all',
+	            cacheKey = ((global ? 'g' : '') + (regex.sticky ? 'y' : '')) || 'noGY',
+	            result,
+	            r2;
+
+	        regex[REGEX_DATA] = regex[REGEX_DATA] || {};
+
+	        // Shares cached copies with `XRegExp.exec`/`replace`
+	        r2 = regex[REGEX_DATA][cacheKey] || (
+	            regex[REGEX_DATA][cacheKey] = copyRegex(regex, {
+	                addG: !!global,
+	                addY: !!regex.sticky,
+	                removeG: scope === 'one',
+	                isInternalOnly: true
+	            })
+	        );
+
+	        result = nativ.match.call(toObject(str), r2);
+
+	        if (regex.global) {
+	            regex.lastIndex = (
+	                (scope === 'one' && result) ?
+	                    // Can't use `r2.lastIndex` since `r2` is nonglobal in this case
+	                    (result.index + result[0].length) : 0
+	            );
+	        }
+
+	        return global ? (result || []) : (result && result[0]);
+	    };
+
+	/**
+	 * Retrieves the matches from searching a string using a chain of regexes that successively search
+	 * within previous matches. The provided `chain` array can contain regexes and objects with `regex`
+	 * and `backref` properties. When a backreference is specified, the named or numbered backreference
+	 * is passed forward to the next regex or returned.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {Array} chain Regexes that each search for matches within preceding results.
+	 * @returns {Array} Matches by the last regex in the chain, or an empty array.
+	 * @example
+	 *
+	 * // Basic usage; matches numbers within <b> tags
+	 * XRegExp.matchChain('1 <b>2</b> 3 <b>4 a 56</b>', [
+	 *   XRegExp('(?is)<b>.*?</b>'),
+	 *   /\d+/
+	 * ]);
+	 * // -> ['2', '4', '56']
+	 *
+	 * // Passing forward and returning specific backreferences
+	 * html = '<a href="http://xregexp.com/api/">XRegExp</a>\
+	 *         <a href="http://www.google.com/">Google</a>';
+	 * XRegExp.matchChain(html, [
+	 *   {regex: /<a href="([^"]+)">/i, backref: 1},
+	 *   {regex: XRegExp('(?i)^https?://(?<domain>[^/?#]+)'), backref: 'domain'}
+	 * ]);
+	 * // -> ['xregexp.com', 'www.google.com']
+	 */
+	    self.matchChain = function(str, chain) {
+	        return (function recurseChain(values, level) {
+	            var item = chain[level].regex ? chain[level] : {regex: chain[level]},
+	                matches = [],
+	                addMatch = function(match) {
+	                    if (item.backref) {
+	                        /* Safari 4.0.5 (but not 5.0.5+) inappropriately uses sparse arrays to hold
+	                         * the `undefined`s for backreferences to nonparticipating capturing
+	                         * groups. In such cases, a `hasOwnProperty` or `in` check on its own would
+	                         * inappropriately throw the exception, so also check if the backreference
+	                         * is a number that is within the bounds of the array.
+	                         */
+	                        if (!(match.hasOwnProperty(item.backref) || +item.backref < match.length)) {
+	                            throw new ReferenceError('Backreference to undefined group: ' + item.backref);
+	                        }
+
+	                        matches.push(match[item.backref] || '');
+	                    } else {
+	                        matches.push(match[0]);
+	                    }
+	                },
+	                i;
+
+	            for (i = 0; i < values.length; ++i) {
+	                self.forEach(values[i], item.regex, addMatch);
+	            }
+
+	            return ((level === chain.length - 1) || !matches.length) ?
+	                matches :
+	                recurseChain(matches, level + 1);
+	        }([str], 0));
+	    };
+
+	/**
+	 * Returns a new string with one or all matches of a pattern replaced. The pattern can be a string
+	 * or regex, and the replacement can be a string or a function to be called for each match. To
+	 * perform a global search and replace, use the optional `scope` argument or include flag g if using
+	 * a regex. Replacement strings can use `${n}` for named and numbered backreferences. Replacement
+	 * functions can use named backreferences via `arguments[0].name`. Also fixes browser bugs compared
+	 * to the native `String.prototype.replace` and can be used reliably cross-browser.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {RegExp|String} search Search pattern to be replaced.
+	 * @param {String|Function} replacement Replacement string or a function invoked to create it.
+	 *   Replacement strings can include special replacement syntax:
+	 *     <li>$$ - Inserts a literal $ character.
+	 *     <li>$&, $0 - Inserts the matched substring.
+	 *     <li>$` - Inserts the string that precedes the matched substring (left context).
+	 *     <li>$' - Inserts the string that follows the matched substring (right context).
+	 *     <li>$n, $nn - Where n/nn are digits referencing an existent capturing group, inserts
+	 *       backreference n/nn.
+	 *     <li>${n} - Where n is a name or any number of digits that reference an existent capturing
+	 *       group, inserts backreference n.
+	 *   Replacement functions are invoked with three or more arguments:
+	 *     <li>The matched substring (corresponds to $& above). Named backreferences are accessible as
+	 *       properties of this first argument.
+	 *     <li>0..n arguments, one for each backreference (corresponding to $1, $2, etc. above).
+	 *     <li>The zero-based index of the match within the total search string.
+	 *     <li>The total string being searched.
+	 * @param {String} [scope='one'] Use 'one' to replace the first match only, or 'all'. If not
+	 *   explicitly specified and using a regex with flag g, `scope` is 'all'.
+	 * @returns {String} New string with one or all matches replaced.
+	 * @example
+	 *
+	 * // Regex search, using named backreferences in replacement string
+	 * var name = XRegExp('(?<first>\\w+) (?<last>\\w+)');
+	 * XRegExp.replace('John Smith', name, '${last}, ${first}');
+	 * // -> 'Smith, John'
+	 *
+	 * // Regex search, using named backreferences in replacement function
+	 * XRegExp.replace('John Smith', name, function(match) {
+	 *   return match.last + ', ' + match.first;
+	 * });
+	 * // -> 'Smith, John'
+	 *
+	 * // String search, with replace-all
+	 * XRegExp.replace('RegExp builds RegExps', 'RegExp', 'XRegExp', 'all');
+	 * // -> 'XRegExp builds XRegExps'
+	 */
+	    self.replace = function(str, search, replacement, scope) {
+	        var isRegex = self.isRegExp(search),
+	            global = (search.global && scope !== 'one') || scope === 'all',
+	            cacheKey = ((global ? 'g' : '') + (search.sticky ? 'y' : '')) || 'noGY',
+	            s2 = search,
+	            result;
+
+	        if (isRegex) {
+	            search[REGEX_DATA] = search[REGEX_DATA] || {};
+
+	            // Shares cached copies with `XRegExp.exec`/`match`. Since a copy is used, `search`'s
+	            // `lastIndex` isn't updated *during* replacement iterations
+	            s2 = search[REGEX_DATA][cacheKey] || (
+	                search[REGEX_DATA][cacheKey] = copyRegex(search, {
+	                    addG: !!global,
+	                    addY: !!search.sticky,
+	                    removeG: scope === 'one',
+	                    isInternalOnly: true
+	                })
+	            );
+	        } else if (global) {
+	            s2 = new RegExp(self.escape(String(search)), 'g');
+	        }
+
+	        // Fixed `replace` required for named backreferences, etc.
+	        result = fixed.replace.call(toObject(str), s2, replacement);
+
+	        if (isRegex && search.global) {
+	            // Fixes IE, Safari bug (last tested IE 9, Safari 5.1)
+	            search.lastIndex = 0;
+	        }
+
+	        return result;
+	    };
+
+	/**
+	 * Performs batch processing of string replacements. Used like {@link #XRegExp.replace}, but
+	 * accepts an array of replacement details. Later replacements operate on the output of earlier
+	 * replacements. Replacement details are accepted as an array with a regex or string to search for,
+	 * the replacement string or function, and an optional scope of 'one' or 'all'. Uses the XRegExp
+	 * replacement text syntax, which supports named backreference properties via `${name}`.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {Array} replacements Array of replacement detail arrays.
+	 * @returns {String} New string with all replacements.
+	 * @example
+	 *
+	 * str = XRegExp.replaceEach(str, [
+	 *   [XRegExp('(?<name>a)'), 'z${name}'],
+	 *   [/b/gi, 'y'],
+	 *   [/c/g, 'x', 'one'], // scope 'one' overrides /g
+	 *   [/d/, 'w', 'all'],  // scope 'all' overrides lack of /g
+	 *   ['e', 'v', 'all'],  // scope 'all' allows replace-all for strings
+	 *   [/f/g, function($0) {
+	 *     return $0.toUpperCase();
+	 *   }]
+	 * ]);
+	 */
+	    self.replaceEach = function(str, replacements) {
+	        var i, r;
+
+	        for (i = 0; i < replacements.length; ++i) {
+	            r = replacements[i];
+	            str = self.replace(str, r[0], r[1], r[2]);
+	        }
+
+	        return str;
+	    };
+
+	/**
+	 * Splits a string into an array of strings using a regex or string separator. Matches of the
+	 * separator are not included in the result array. However, if `separator` is a regex that contains
+	 * capturing groups, backreferences are spliced into the result each time `separator` is matched.
+	 * Fixes browser bugs compared to the native `String.prototype.split` and can be used reliably
+	 * cross-browser.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to split.
+	 * @param {RegExp|String} separator Regex or string to use for separating the string.
+	 * @param {Number} [limit] Maximum number of items to include in the result array.
+	 * @returns {Array} Array of substrings.
+	 * @example
+	 *
+	 * // Basic use
+	 * XRegExp.split('a b c', ' ');
+	 * // -> ['a', 'b', 'c']
+	 *
+	 * // With limit
+	 * XRegExp.split('a b c', ' ', 2);
+	 * // -> ['a', 'b']
+	 *
+	 * // Backreferences in result array
+	 * XRegExp.split('..word1..', /([a-z]+)(\d+)/i);
+	 * // -> ['..', 'word', '1', '..']
+	 */
+	    self.split = function(str, separator, limit) {
+	        return fixed.split.call(toObject(str), separator, limit);
+	    };
+
+	/**
+	 * Executes a regex search in a specified string. Returns `true` or `false`. Optional `pos` and
+	 * `sticky` arguments specify the search start position, and whether the match must start at the
+	 * specified position only. The `lastIndex` property of the provided regex is not used, but is
+	 * updated for compatibility. Also fixes browser bugs compared to the native
+	 * `RegExp.prototype.test` and can be used reliably cross-browser.
+	 *
+	 * @memberOf XRegExp
+	 * @param {String} str String to search.
+	 * @param {RegExp} regex Regex to search with.
+	 * @param {Number} [pos=0] Zero-based index at which to start the search.
+	 * @param {Boolean|String} [sticky=false] Whether the match must start at the specified position
+	 *   only. The string `'sticky'` is accepted as an alternative to `true`.
+	 * @returns {Boolean} Whether the regex matched the provided value.
+	 * @example
+	 *
+	 * // Basic use
+	 * XRegExp.test('abc', /c/); // -> true
+	 *
+	 * // With pos and sticky
+	 * XRegExp.test('abc', /c/, 0, 'sticky'); // -> false
+	 */
+	    self.test = function(str, regex, pos, sticky) {
+	        // Do this the easy way :-)
+	        return !!self.exec(str, regex, pos, sticky);
+	    };
+
+	/**
+	 * Uninstalls optional features according to the specified options. All optional features start out
+	 * uninstalled, so this is used to undo the actions of {@link #XRegExp.install}.
+	 *
+	 * @memberOf XRegExp
+	 * @param {Object|String} options Options object or string.
+	 * @example
+	 *
+	 * // With an options object
+	 * XRegExp.uninstall({
+	 *   // Disables support for astral code points in Unicode addons
+	 *   astral: true,
+	 *
+	 *   // Restores native regex methods
+	 *   natives: true
+	 * });
+	 *
+	 * // With an options string
+	 * XRegExp.uninstall('astral natives');
+	 */
+	    self.uninstall = function(options) {
+	        options = prepareOptions(options);
+
+	        if (features.astral && options.astral) {
+	            setAstral(false);
+	        }
+
+	        if (features.natives && options.natives) {
+	            setNatives(false);
+	        }
+	    };
+
+	/**
+	 * Returns an XRegExp object that is the union of the given patterns. Patterns can be provided as
+	 * regex objects or strings. Metacharacters are escaped in patterns provided as strings.
+	 * Backreferences in provided regex objects are automatically renumbered to work correctly within
+	 * the larger combined pattern. Native flags used by provided regexes are ignored in favor of the
+	 * `flags` argument.
+	 *
+	 * @memberOf XRegExp
+	 * @param {Array} patterns Regexes and strings to combine.
+	 * @param {String} [flags] Any combination of XRegExp flags.
+	 * @returns {RegExp} Union of the provided regexes and strings.
+	 * @example
+	 *
+	 * XRegExp.union(['a+b*c', /(dogs)\1/, /(cats)\1/], 'i');
+	 * // -> /a\+b\*c|(dogs)\1|(cats)\2/i
+	 */
+	    self.union = function(patterns, flags) {
+	        var parts = /(\()(?!\?)|\\([1-9]\d*)|\\[\s\S]|\[(?:[^\\\]]|\\[\s\S])*]/g,
+	            output = [],
+	            numCaptures = 0,
+	            numPriorCaptures,
+	            captureNames,
+	            pattern,
+	            rewrite = function(match, paren, backref) {
+	                var name = captureNames[numCaptures - numPriorCaptures];
+
+	                // Capturing group
+	                if (paren) {
+	                    ++numCaptures;
+	                    // If the current capture has a name, preserve the name
+	                    if (name) {
+	                        return '(?<' + name + '>';
+	                    }
+	                // Backreference
+	                } else if (backref) {
+	                    // Rewrite the backreference
+	                    return '\\' + (+backref + numPriorCaptures);
+	                }
+
+	                return match;
+	            },
+	            i;
+
+	        if (!(isType(patterns, 'Array') && patterns.length)) {
+	            throw new TypeError('Must provide a nonempty array of patterns to merge');
+	        }
+
+	        for (i = 0; i < patterns.length; ++i) {
+	            pattern = patterns[i];
+
+	            if (self.isRegExp(pattern)) {
+	                numPriorCaptures = numCaptures;
+	                captureNames = (pattern[REGEX_DATA] && pattern[REGEX_DATA].captureNames) || [];
+
+	                // Rewrite backreferences. Passing to XRegExp dies on octals and ensures patterns
+	                // are independently valid; helps keep this simple. Named captures are put back
+	                output.push(nativ.replace.call(self(pattern.source).source, parts, rewrite));
+	            } else {
+	                output.push(self.escape(pattern));
+	            }
+	        }
+
+	        return self(output.join('|'), flags);
+	    };
+
+	/* ==============================
+	 * Fixed/extended native methods
+	 * ============================== */
+
+	/**
+	 * Adds named capture support (with backreferences returned as `result.name`), and fixes browser
+	 * bugs in the native `RegExp.prototype.exec`. Calling `XRegExp.install('natives')` uses this to
+	 * override the native method. Use via `XRegExp.exec` without overriding natives.
+	 *
+	 * @private
+	 * @param {String} str String to search.
+	 * @returns {Array} Match array with named backreference properties, or `null`.
+	 */
+	    fixed.exec = function(str) {
+	        var origLastIndex = this.lastIndex,
+	            match = nativ.exec.apply(this, arguments),
+	            name,
+	            r2,
+	            i;
+
+	        if (match) {
+	            // Fix browsers whose `exec` methods don't return `undefined` for nonparticipating
+	            // capturing groups. This fixes IE 5.5-8, but not IE 9's quirks mode or emulation of
+	            // older IEs. IE 9 in standards mode follows the spec
+	            if (!correctExecNpcg && match.length > 1 && indexOf(match, '') > -1) {
+	                r2 = copyRegex(this, {
+	                    removeG: true,
+	                    isInternalOnly: true
+	                });
+	                // Using `str.slice(match.index)` rather than `match[0]` in case lookahead allowed
+	                // matching due to characters outside the match
+	                nativ.replace.call(String(str).slice(match.index), r2, function() {
+	                    var len = arguments.length, i;
+	                    // Skip index 0 and the last 2
+	                    for (i = 1; i < len - 2; ++i) {
+	                        if (arguments[i] === undefined) {
+	                            match[i] = undefined;
+	                        }
+	                    }
+	                });
+	            }
+
+	            // Attach named capture properties
+	            if (this[REGEX_DATA] && this[REGEX_DATA].captureNames) {
+	                // Skip index 0
+	                for (i = 1; i < match.length; ++i) {
+	                    name = this[REGEX_DATA].captureNames[i - 1];
+	                    if (name) {
+	                        match[name] = match[i];
+	                    }
+	                }
+	            }
+
+	            // Fix browsers that increment `lastIndex` after zero-length matches
+	            if (this.global && !match[0].length && (this.lastIndex > match.index)) {
+	                this.lastIndex = match.index;
+	            }
+	        }
+
+	        if (!this.global) {
+	            // Fixes IE, Opera bug (last tested IE 9, Opera 11.6)
+	            this.lastIndex = origLastIndex;
+	        }
+
+	        return match;
+	    };
+
+	/**
+	 * Fixes browser bugs in the native `RegExp.prototype.test`. Calling `XRegExp.install('natives')`
+	 * uses this to override the native method.
+	 *
+	 * @private
+	 * @param {String} str String to search.
+	 * @returns {Boolean} Whether the regex matched the provided value.
+	 */
+	    fixed.test = function(str) {
+	        // Do this the easy way :-)
+	        return !!fixed.exec.call(this, str);
+	    };
+
+	/**
+	 * Adds named capture support (with backreferences returned as `result.name`), and fixes browser
+	 * bugs in the native `String.prototype.match`. Calling `XRegExp.install('natives')` uses this to
+	 * override the native method.
+	 *
+	 * @private
+	 * @param {RegExp|*} regex Regex to search with. If not a regex object, it is passed to `RegExp`.
+	 * @returns {Array} If `regex` uses flag g, an array of match strings or `null`. Without flag g,
+	 *   the result of calling `regex.exec(this)`.
+	 */
+	    fixed.match = function(regex) {
+	        var result;
+
+	        if (!self.isRegExp(regex)) {
+	            // Use the native `RegExp` rather than `XRegExp`
+	            regex = new RegExp(regex);
+	        } else if (regex.global) {
+	            result = nativ.match.apply(this, arguments);
+	            // Fixes IE bug
+	            regex.lastIndex = 0;
+
+	            return result;
+	        }
+
+	        return fixed.exec.call(regex, toObject(this));
+	    };
+
+	/**
+	 * Adds support for `${n}` tokens for named and numbered backreferences in replacement text, and
+	 * provides named backreferences to replacement functions as `arguments[0].name`. Also fixes browser
+	 * bugs in replacement text syntax when performing a replacement using a nonregex search value, and
+	 * the value of a replacement regex's `lastIndex` property during replacement iterations and upon
+	 * completion. Calling `XRegExp.install('natives')` uses this to override the native method. Note
+	 * that this doesn't support SpiderMonkey's proprietary third (`flags`) argument. Use via
+	 * `XRegExp.replace` without overriding natives.
+	 *
+	 * @private
+	 * @param {RegExp|String} search Search pattern to be replaced.
+	 * @param {String|Function} replacement Replacement string or a function invoked to create it.
+	 * @returns {String} New string with one or all matches replaced.
+	 */
+	    fixed.replace = function(search, replacement) {
+	        var isRegex = self.isRegExp(search),
+	            origLastIndex,
+	            captureNames,
+	            result;
+
+	        if (isRegex) {
+	            if (search[REGEX_DATA]) {
+	                captureNames = search[REGEX_DATA].captureNames;
+	            }
+	            // Only needed if `search` is nonglobal
+	            origLastIndex = search.lastIndex;
+	        } else {
+	            search += ''; // Type-convert
+	        }
+
+	        // Don't use `typeof`; some older browsers return 'function' for regex objects
+	        if (isType(replacement, 'Function')) {
+	            // Stringifying `this` fixes a bug in IE < 9 where the last argument in replacement
+	            // functions isn't type-converted to a string
+	            result = nativ.replace.call(String(this), search, function() {
+	                var args = arguments, i;
+	                if (captureNames) {
+	                    // Change the `arguments[0]` string primitive to a `String` object that can
+	                    // store properties. This really does need to use `String` as a constructor
+	                    args[0] = new String(args[0]);
+	                    // Store named backreferences on the first argument
+	                    for (i = 0; i < captureNames.length; ++i) {
+	                        if (captureNames[i]) {
+	                            args[0][captureNames[i]] = args[i + 1];
+	                        }
+	                    }
+	                }
+	                // Update `lastIndex` before calling `replacement`. Fixes IE, Chrome, Firefox,
+	                // Safari bug (last tested IE 9, Chrome 17, Firefox 11, Safari 5.1)
+	                if (isRegex && search.global) {
+	                    search.lastIndex = args[args.length - 2] + args[0].length;
+	                }
+	                // ES6 specs the context for replacement functions as `undefined`
+	                return replacement.apply(undefined, args);
+	            });
+	        } else {
+	            // Ensure that the last value of `args` will be a string when given nonstring `this`,
+	            // while still throwing on null or undefined context
+	            result = nativ.replace.call(this == null ? this : String(this), search, function() {
+	                // Keep this function's `arguments` available through closure
+	                var args = arguments;
+	                return nativ.replace.call(String(replacement), replacementToken, function($0, $1, $2) {
+	                    var n;
+	                    // Named or numbered backreference with curly braces
+	                    if ($1) {
+	                        // XRegExp behavior for `${n}`:
+	                        // 1. Backreference to numbered capture, if `n` is an integer. Use `0` for
+	                        //    for the entire match. Any number of leading zeros may be used.
+	                        // 2. Backreference to named capture `n`, if it exists and is not an
+	                        //    integer overridden by numbered capture. In practice, this does not
+	                        //    overlap with numbered capture since XRegExp does not allow named
+	                        //    capture to use a bare integer as the name.
+	                        // 3. If the name or number does not refer to an existing capturing group,
+	                        //    it's an error.
+	                        n = +$1; // Type-convert; drop leading zeros
+	                        if (n <= args.length - 3) {
+	                            return args[n] || '';
+	                        }
+	                        // Groups with the same name is an error, else would need `lastIndexOf`
+	                        n = captureNames ? indexOf(captureNames, $1) : -1;
+	                        if (n < 0) {
+	                            throw new SyntaxError('Backreference to undefined group ' + $0);
+	                        }
+	                        return args[n + 1] || '';
+	                    }
+	                    // Else, special variable or numbered backreference without curly braces
+	                    if ($2 === '$') { // $$
+	                        return '$';
+	                    }
+	                    if ($2 === '&' || +$2 === 0) { // $&, $0 (not followed by 1-9), $00
+	                        return args[0];
+	                    }
+	                    if ($2 === '`') { // $` (left context)
+	                        return args[args.length - 1].slice(0, args[args.length - 2]);
+	                    }
+	                    if ($2 === "'") { // $' (right context)
+	                        return args[args.length - 1].slice(args[args.length - 2] + args[0].length);
+	                    }
+	                    // Else, numbered backreference without curly braces
+	                    $2 = +$2; // Type-convert; drop leading zero
+	                    // XRegExp behavior for `$n` and `$nn`:
+	                    // - Backrefs end after 1 or 2 digits. Use `${..}` for more digits.
+	                    // - `$1` is an error if no capturing groups.
+	                    // - `$10` is an error if less than 10 capturing groups. Use `${1}0` instead.
+	                    // - `$01` is `$1` if at least one capturing group, else it's an error.
+	                    // - `$0` (not followed by 1-9) and `$00` are the entire match.
+	                    // Native behavior, for comparison:
+	                    // - Backrefs end after 1 or 2 digits. Cannot reference capturing group 100+.
+	                    // - `$1` is a literal `$1` if no capturing groups.
+	                    // - `$10` is `$1` followed by a literal `0` if less than 10 capturing groups.
+	                    // - `$01` is `$1` if at least one capturing group, else it's a literal `$01`.
+	                    // - `$0` is a literal `$0`.
+	                    if (!isNaN($2)) {
+	                        if ($2 > args.length - 3) {
+	                            throw new SyntaxError('Backreference to undefined group ' + $0);
+	                        }
+	                        return args[$2] || '';
+	                    }
+	                    // `$` followed by an unsupported char is an error, unlike native JS
+	                    throw new SyntaxError('Invalid token ' + $0);
+	                });
+	            });
+	        }
+
+	        if (isRegex) {
+	            if (search.global) {
+	                // Fixes IE, Safari bug (last tested IE 9, Safari 5.1)
+	                search.lastIndex = 0;
+	            } else {
+	                // Fixes IE, Opera bug (last tested IE 9, Opera 11.6)
+	                search.lastIndex = origLastIndex;
+	            }
+	        }
+
+	        return result;
+	    };
+
+	/**
+	 * Fixes browser bugs in the native `String.prototype.split`. Calling `XRegExp.install('natives')`
+	 * uses this to override the native method. Use via `XRegExp.split` without overriding natives.
+	 *
+	 * @private
+	 * @param {RegExp|String} separator Regex or string to use for separating the string.
+	 * @param {Number} [limit] Maximum number of items to include in the result array.
+	 * @returns {Array} Array of substrings.
+	 */
+	    fixed.split = function(separator, limit) {
+	        if (!self.isRegExp(separator)) {
+	            // Browsers handle nonregex split correctly, so use the faster native method
+	            return nativ.split.apply(this, arguments);
+	        }
+
+	        var str = String(this),
+	            output = [],
+	            origLastIndex = separator.lastIndex,
+	            lastLastIndex = 0,
+	            lastLength;
+
+	        // Values for `limit`, per the spec:
+	        // If undefined: pow(2,32) - 1
+	        // If 0, Infinity, or NaN: 0
+	        // If positive number: limit = floor(limit); if (limit >= pow(2,32)) limit -= pow(2,32);
+	        // If negative number: pow(2,32) - floor(abs(limit))
+	        // If other: Type-convert, then use the above rules
+	        // This line fails in very strange ways for some values of `limit` in Opera 10.5-10.63,
+	        // unless Opera Dragonfly is open (go figure). It works in at least Opera 9.5-10.1 and 11+
+	        limit = (limit === undefined ? -1 : limit) >>> 0;
+
+	        self.forEach(str, separator, function(match) {
+	            // This condition is not the same as `if (match[0].length)`
+	            if ((match.index + match[0].length) > lastLastIndex) {
+	                output.push(str.slice(lastLastIndex, match.index));
+	                if (match.length > 1 && match.index < str.length) {
+	                    Array.prototype.push.apply(output, match.slice(1));
+	                }
+	                lastLength = match[0].length;
+	                lastLastIndex = match.index + lastLength;
+	            }
+	        });
+
+	        if (lastLastIndex === str.length) {
+	            if (!nativ.test.call(separator, '') || lastLength) {
+	                output.push('');
+	            }
+	        } else {
+	            output.push(str.slice(lastLastIndex));
+	        }
+
+	        separator.lastIndex = origLastIndex;
+	        return output.length > limit ? output.slice(0, limit) : output;
+	    };
+
+	/* ==============================
+	 * Built-in syntax/flag tokens
+	 * ============================== */
+
+	    add = self.addToken;
+
+	/*
+	 * Letter escapes that natively match literal characters: `\a`, `\A`, etc. These should be
+	 * SyntaxErrors but are allowed in web reality. XRegExp makes them errors for cross-browser
+	 * consistency and to reserve their syntax, but lets them be superseded by addons.
+	 */
+	    add(
+	        /\\([ABCE-RTUVXYZaeg-mopqyz]|c(?![A-Za-z])|u(?![\dA-Fa-f]{4}|{[\dA-Fa-f]+})|x(?![\dA-Fa-f]{2}))/,
+	        function(match, scope) {
+	            // \B is allowed in default scope only
+	            if (match[1] === 'B' && scope === defaultScope) {
+	                return match[0];
+	            }
+	            throw new SyntaxError('Invalid escape ' + match[0]);
+	        },
+	        {
+	            scope: 'all',
+	            leadChar: '\\'
+	        }
+	    );
+
+	/*
+	 * Unicode code point escape with curly braces: `\u{N..}`. `N..` is any one or more digit
+	 * hexadecimal number from 0-10FFFF, and can include leading zeros. Requires the native ES6 `u` flag
+	 * to support code points greater than U+FFFF. Avoids converting code points above U+FFFF to
+	 * surrogate pairs (which could be done without flag `u`), since that could lead to broken behavior
+	 * if you follow a `\u{N..}` token that references a code point above U+FFFF with a quantifier, or
+	 * if you use the same in a character class.
+	 */
+	    add(
+	        /\\u{([\dA-Fa-f]+)}/,
+	        function(match, scope, flags) {
+	            var code = dec(match[1]);
+	            if (code > 0x10FFFF) {
+	                throw new SyntaxError('Invalid Unicode code point ' + match[0]);
+	            }
+	            if (code <= 0xFFFF) {
+	                // Converting to \uNNNN avoids needing to escape the literal character and keep it
+	                // separate from preceding tokens
+	                return '\\u' + pad4(hex(code));
+	            }
+	            // If `code` is between 0xFFFF and 0x10FFFF, require and defer to native handling
+	            if (hasNativeU && flags.indexOf('u') > -1) {
+	                return match[0];
+	            }
+	            throw new SyntaxError('Cannot use Unicode code point above \\u{FFFF} without flag u');
+	        },
+	        {
+	            scope: 'all',
+	            leadChar: '\\'
+	        }
+	    );
+
+	/*
+	 * Empty character class: `[]` or `[^]`. This fixes a critical cross-browser syntax inconsistency.
+	 * Unless this is standardized (per the ES spec), regex syntax can't be accurately parsed because
+	 * character class endings can't be determined.
+	 */
+	    add(
+	        /\[(\^?)]/,
+	        function(match) {
+	            // For cross-browser compatibility with ES3, convert [] to \b\B and [^] to [\s\S].
+	            // (?!) should work like \b\B, but is unreliable in some versions of Firefox
+	            return match[1] ? '[\\s\\S]' : '\\b\\B';
+	        },
+	        {leadChar: '['}
+	    );
+
+	/*
+	 * Comment pattern: `(?# )`. Inline comments are an alternative to the line comments allowed in
+	 * free-spacing mode (flag x).
+	 */
+	    add(
+	        /\(\?#[^)]*\)/,
+	        function(match, scope, flags) {
+	            // Keep tokens separated unless the following token is a quantifier
+	            return isQuantifierNext(match.input, match.index + match[0].length, flags) ?
+	                '' : '(?:)';
+	        },
+	        {leadChar: '('}
+	    );
+
+	/*
+	 * Whitespace and line comments, in free-spacing mode (aka extended mode, flag x) only.
+	 */
+	    add(
+	        /\s+|#.*/,
+	        function(match, scope, flags) {
+	            // Keep tokens separated unless the following token is a quantifier
+	            return isQuantifierNext(match.input, match.index + match[0].length, flags) ?
+	                '' : '(?:)';
+	        },
+	        {flag: 'x'}
+	    );
+
+	/*
+	 * Dot, in dotall mode (aka singleline mode, flag s) only.
+	 */
+	    add(
+	        /\./,
+	        function() {
+	            return '[\\s\\S]';
+	        },
+	        {
+	            flag: 's',
+	            leadChar: '.'
+	        }
+	    );
+
+	/*
+	 * Named backreference: `\k<name>`. Backreference names can use the characters A-Z, a-z, 0-9, _,
+	 * and $ only. Also allows numbered backreferences as `\k<n>`.
+	 */
+	    add(
+	        /\\k<([\w$]+)>/,
+	        function(match) {
+	            // Groups with the same name is an error, else would need `lastIndexOf`
+	            var index = isNaN(match[1]) ? (indexOf(this.captureNames, match[1]) + 1) : +match[1],
+	                endIndex = match.index + match[0].length;
+	            if (!index || index > this.captureNames.length) {
+	                throw new SyntaxError('Backreference to undefined group ' + match[0]);
+	            }
+	            // Keep backreferences separate from subsequent literal numbers
+	            return '\\' + index + (
+	                endIndex === match.input.length || isNaN(match.input.charAt(endIndex)) ?
+	                    '' : '(?:)'
+	            );
+	        },
+	        {leadChar: '\\'}
+	    );
+
+	/*
+	 * Numbered backreference or octal, plus any following digits: `\0`, `\11`, etc. Octals except `\0`
+	 * not followed by 0-9 and backreferences to unopened capture groups throw an error. Other matches
+	 * are returned unaltered. IE < 9 doesn't support backreferences above `\99` in regex syntax.
+	 */
+	    add(
+	        /\\(\d+)/,
+	        function(match, scope) {
+	            if (
+	                !(
+	                    scope === defaultScope &&
+	                    /^[1-9]/.test(match[1]) &&
+	                    +match[1] <= this.captureNames.length
+	                ) &&
+	                match[1] !== '0'
+	            ) {
+	                throw new SyntaxError('Cannot use octal escape or backreference to undefined group ' +
+	                    match[0]);
+	            }
+	            return match[0];
+	        },
+	        {
+	            scope: 'all',
+	            leadChar: '\\'
+	        }
+	    );
+
+	/*
+	 * Named capturing group; match the opening delimiter only: `(?<name>`. Capture names can use the
+	 * characters A-Z, a-z, 0-9, _, and $ only. Names can't be integers. Supports Python-style
+	 * `(?P<name>` as an alternate syntax to avoid issues in some older versions of Opera which natively
+	 * supported the Python-style syntax. Otherwise, XRegExp might treat numbered backreferences to
+	 * Python-style named capture as octals.
+	 */
+	    add(
+	        /\(\?P?<([\w$]+)>/,
+	        function(match) {
+	            // Disallow bare integers as names because named backreferences are added to match
+	            // arrays and therefore numeric properties may lead to incorrect lookups
+	            if (!isNaN(match[1])) {
+	                throw new SyntaxError('Cannot use integer as capture name ' + match[0]);
+	            }
+	            if (match[1] === 'length' || match[1] === '__proto__') {
+	                throw new SyntaxError('Cannot use reserved word as capture name ' + match[0]);
+	            }
+	            if (indexOf(this.captureNames, match[1]) > -1) {
+	                throw new SyntaxError('Cannot use same name for multiple groups ' + match[0]);
+	            }
+	            this.captureNames.push(match[1]);
+	            this.hasNamedCapture = true;
+	            return '(';
+	        },
+	        {leadChar: '('}
+	    );
+
+	/*
+	 * Capturing group; match the opening parenthesis only. Required for support of named capturing
+	 * groups. Also adds explicit capture mode (flag n).
+	 */
+	    add(
+	        /\((?!\?)/,
+	        function(match, scope, flags) {
+	            if (flags.indexOf('n') > -1) {
+	                return '(?:';
+	            }
+	            this.captureNames.push(null);
+	            return '(';
+	        },
+	        {
+	            optionalFlags: 'n',
+	            leadChar: '('
+	        }
+	    );
+
+	/* ==============================
+	 * Expose XRegExp
+	 * ============================== */
+
+	    return self;
+
+	}());
+	 true ? exports.XRegExp = XRegExp : null;
 
 
 /***/ },
 /* 119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(120)
+	module.exports.template = __webpack_require__(121)
+
+
+/***/ },
+/* 120 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {$("body").delegate(".sidebar-tree","click",function(){
+	        $(this).next().slideToggle("200", "linear");
+	    });
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(47)))
+
+/***/ },
+/* 121 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>简单事例</div>";
+	module.exports = "<aside class=\"sidebar\">\n        <ul>\n            <li>\n                <a class=\"sidebar-tree\" >1.指令</a>\n                <ul class=\"sidebar-ul\">\n                    <li>\n                        <a v-link=\"{ name : 'simpleEmp' }\">1.简单事例</a>\n                    </li>\n                    <li>\n                        <a v-link=\"{ name : 'inlineExp' }\">2.内联表达式</a>\n                    </li>\n                </ul>\n            </li>\n            <li>\n                <a  >2.过滤器</a>\n            </li>\n            <li>\n                <a>3.渲染列表</a>\n            </li>\n            <li>\n                <a>4.事件监听</a>\n            </li>\n            <li>\n                <a>5.处理表单</a>\n            </li>\n            <li>\n                <a>6.计算属性</a>\n            </li>\n            <li>\n                <a>7.自定义指令</a>\n            </li>\n            <li>\n                <a>8.自定义过滤器</a>\n            </li>\n            <li>\n                <a>9.组件系统</a>\n            </li>\n            <li>\n                <a>10.过渡效果</a>\n            </li>\n        </ul>\n    </aside>\n    <section class=\"content\">\n        <router-view></router-view>\n    </section>";
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(123)
+	module.exports.template = __webpack_require__(124)
+
+
+/***/ },
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = {
+	        data:{
+
+	        },
+	        ready: function(){
+	            var SyntaxHighlighter = __webpack_require__(116).SyntaxHighlighter;
+	            SyntaxHighlighter.highlight();
+	        }
+	    };
+
+/***/ },
+/* 124 */
+/***/ function(module, exports) {
+
+	module.exports = "<h2 class=\"\">简单事例</h2>\n    <pre class=\"brush: js;toolbar:false;\" >\n        <div &nbsp;v-text=\"message\"></div>\n        function helloSyntaxHighlighter()\n        {\n            return \"hi!\";\n        }\n    </pre>";
+
+/***/ },
+/* 125 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(126)
+	module.exports.template = __webpack_require__(127)
+
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = {
+	        data:{
+
+	        },
+	        ready: function(){
+	            var SyntaxHighlighter = __webpack_require__(116).SyntaxHighlighter;
+	            SyntaxHighlighter.highlight();
+	        }
+	    };
+
+/***/ },
+/* 127 */
+/***/ function(module, exports) {
+
+	module.exports = "<h2 class=\"\">内联表达式</h2>\n    <pre class=\"brush: js;\" >\n        <div &nbsp;v-text=\"message\"></div>\n        function hello1111SyntaxHighlighter()\n        {\n            return \"hi!\";\n        }\n    </pre>";
 
 /***/ }
 ]);

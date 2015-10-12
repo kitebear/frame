@@ -15,6 +15,12 @@ Vue.use(VueRouter);
 //加载scss
 require("./dist/stylesheets/vue.css");
 
+//加载插件
+require("shCore");
+require("shBrushJScript");
+
+window.XRegExp = require("xregexp").XRegExp;
+
 App = Vue.extend();
 router = new VueRouter();
 
@@ -22,9 +28,13 @@ router.map({
     '/': {
         component: require('./vue/app.vue'),
         subRoutes: {
-            '/Directives':{
-                name : "Directives",
+            '/simple_emp': {
+                name : "simpleEmp",
                 component: require("./vue/directives/simple_emp.vue")
+            },
+            '/inlineExp': {
+                name : "inlineExp",
+                component: require("./vue/directives/inline_expressions.vue")
             }
         }
         //subRoutes: {
